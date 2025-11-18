@@ -49,7 +49,7 @@ Version: 1.0
 /* Base CSS */
 :root {
   --primary-color: #C2DF93;
-  --secondary-color: #E3572B;
+  --secondary-color: #16b943;
   --heading-color: #1F1F1F;
   --primary-black-color: #063232;
   --gray-color: #F4F8EC;
@@ -165,10 +165,10 @@ iframe {
   border: none;
   display: inherit;
 }
-
+/* 
 img {
   max-width: 100%;
-}
+} */
 
 body {
   font-weight: normal;
@@ -265,7 +265,7 @@ label {
   font-size: 20px;
   line-height: 1;
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: #16b943;
   font-weight: 700;
   text-transform: uppercase;
   display: -webkit-inline-box;
@@ -282,11 +282,11 @@ label {
   content: "";
   width: 40px;
   height: 1px;
-  background-color: var(--secondary-color);
+  background-color: #c918b7;
 }
 
 .section-title .sub-title {
-  color: var(--secondary-color);
+  color: #16b943;
   margin-bottom: 13px;
 }
 .section-title h2 {
@@ -306,10 +306,10 @@ label {
 }
 
 .text-white .sub-title {
-  color: var(--primary-color);
+  color: #16b943;
 }
 .text-white .sub-title:after {
-  background-color: var(--primary-color);
+  background-color: #c918b7;
 }
 
 /* Check List */
@@ -387,7 +387,7 @@ label {
 
 /* Ratings */
 .ratings i {
-  color: var(--secondary-color);
+  color: #c918b7;
 }
 
 /* Switch Box */
@@ -471,7 +471,7 @@ label {
   color: var(--heading-color);
 }
 .theme-pagination ul li a:hover {
-  background-color: var(--primary-black-color);
+  background-color: #1ab840;
   color: var(--white-color);
   border-color: transparent;
 }
@@ -508,7 +508,7 @@ label {
 }
 .preloader .loading-wrapper .loading {
   border: 1px solid transparent;
-  border-color: transparent var(--primary-black-color) transparent var(--primary-black-color);
+  border-color: transparent #18b841 transparent #18b841;
   -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
           animation: rotate-loading 1.5s linear 0s infinite normal;
   -webkit-transform-origin: 50% 50%;
@@ -524,7 +524,7 @@ label {
           transform: translate(-50%, -50%);
 }
 .preloader .loading-wrapper #loading-icon img {
-  width: 40px;
+  width: 120px;
 }
 
 @-webkit-keyframes rotate-loading {
@@ -900,11 +900,11 @@ label {
 .theme-btn.style-one {
   padding: 18px 30px;
   line-height: 20px;
-  background-color: var(--primary-black-color);
+  background-color: #1bb743;
   color: var(--white-color);
 }
 .theme-btn.style-one:hover {
-  background-color: var(--secondary-color);
+  background-color: #cf15ba;
   color: var(--white-color);
 }
 @media screen and (max-width: 1199.98px) {
@@ -919,7 +919,7 @@ label {
   color: var(--heading-color);
 }
 .theme-btn.style-two:hover {
-  background-color: var(--secondary-color);
+  background-color: #ce16b8;
   color: var(--white-color);
 }
 .theme-btn:hover i {
@@ -938,7 +938,7 @@ label {
   transition: all 0.35s;
 }
 .read-more.style-one:hover {
-  color: var(--primary-color);
+  color: #d115b3;
   text-decoration: underline;
 }
 .read-more.style-one:hover i {
@@ -1290,11 +1290,11 @@ label {
           align-items: center;
 }
 .nav-right-item .theme-btn.style-one {
-  color: var(--heading-color);
-  background-color: var(--primary-color);
+    color: #ffffff;
+    background-color: #1ab840;
 }
 .nav-right-item .theme-btn.style-one:hover {
-  background-color: var(--secondary-color);
+  background-color: #cd17b4;
   color: var(--white-color);
 }
 
@@ -1368,7 +1368,7 @@ label {
   color: var(--primary-color);
 }
 .header-one .header-navigation .main-menu ul > li:hover > a {
-  color: var(--primary-color);
+  color: #1ab840;
 }
 .header-one .nav-right-item .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.7);
@@ -1472,7 +1472,7 @@ label {
   max-width: 865px;
   width: 100%;
   height: 1040px;
-  background-color: var(--primary-color);
+  background-color: #18b843;
   z-index: -1;
 }
 @media (max-width: 1650px) {
@@ -1544,11 +1544,11 @@ label {
   }
 }
 .bizzen-hero_one .hero-content .theme-btn.style-one {
-  color: var(--heading-color);
-  background-color: var(--primary-color);
+    color: #ffffff;
+    background-color: #16b845;
 }
 .bizzen-hero_one .hero-content .theme-btn.style-one:hover {
-  background-color: var(--secondary-color);
+  background-color: #cd17b3;
   color: var(--white-color);
 }
 .bizzen-hero_one .text-box {
@@ -3094,8 +3094,8 @@ label {
   width: 100%;
   height: 100%;
   content: "";
-  background: -webkit-gradient(linear, right top, left top, from(rgba(6, 50, 50, 0.6)), color-stop(90.05%, #063232));
-  background: linear-gradient(270deg, rgba(6, 50, 50, 0.6) 0%, #063232 90.05%);
+  background: -webkit-gradient(linear, right top, left top, from(rgb(27 183 67)), color-stop(90.05%, #063232));
+  background: linear-gradient(270deg, rgb(27 183 67) 0%, #063232 90.05%);
   z-index: -1;
 }
 .bizzen-counter_one .bizzen-content-box {
@@ -3582,14 +3582,14 @@ label {
 }
 .bizzen-project-item.style-one .project-inner .content .sub-title {
   margin-bottom: 20px;
-  color: var(--secondary-color);
+  color: #cf16b5;
 }
 .bizzen-project-item.style-one .project-inner .content .sub-title:after {
   display: none;
 }
 .bizzen-project-item.style-one .project-inner .content .title {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 19px;
 }
 .bizzen-project-item.style-one .project-inner .content .title:hover {
   color: var(--secondary-color);
@@ -4475,7 +4475,7 @@ label {
 }
 .bizzen-team-item.style-one .member-image .member-info {
   padding: 23px 40px 25px;
-  background-color: var(--primary-black-color);
+  background-color: #16b943;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -4516,7 +4516,7 @@ label {
   position: absolute;
   bottom: -50%;
   right: 0;
-  background-color: var(--primary-black-color);
+  background-color: #28be50;
   padding: 10px 20px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -4781,7 +4781,7 @@ label {
           justify-content: center;
   cursor: pointer;
   z-index: 1;
-  background-color: var(--primary-black-color);
+  background-color: #16b943;
   color: var(--white-color);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -4947,7 +4947,7 @@ label {
   margin-bottom: 30px;
 }
 .bizzen-testimonial-item.style-three .testimonial-content .quote-ratings-wrap .ratings i {
-  color: var(--secondary-color);
+  color: #c918b7;
 }
 .bizzen-testimonial-item.style-three .testimonial-content > p {
   margin-bottom: 20px;
@@ -5029,7 +5029,7 @@ label {
   font-size: 30px;
   font-weight: 700;
   font-family: var(--heading-font);
-  background-color: var(--primary-black-color);
+  background-color: #1ab840;
   padding: 10px 18px;
   line-height: 1;
 }
@@ -5055,7 +5055,7 @@ label {
 }
 .bizzen-blog-post-item.style-two .post-content .post-meta span i {
   margin-right: 10px;
-  color: var(--secondary-color);
+  color: #1ab840;
 }
 .bizzen-blog-post-item.style-two .post-content .post-meta span:not(:last-child):after {
   display: -webkit-inline-box;
@@ -5598,7 +5598,7 @@ label {
 }
 .bizzen-contact_one .contact-wrapper .contact-form-wrapper {
   width: 47%;
-  background-color: var(--primary-black-color);
+  background-color: #555b6a;
   padding: 100px 60px 120px;
   margin-left: -120px;
 }
@@ -5649,11 +5649,11 @@ label {
   color: rgba(255, 255, 255, 0.7);
 }
 .bizzen-contact_one .contact-wrapper .contact-form-wrapper .bizzen-content-box .contact-form .theme-btn.style-one {
-  background-color: var(--primary-color);
-  color: var(--heading-color);
+  background-color:#16b943;
+  color: white;
 }
 .bizzen-contact_one .contact-wrapper .contact-form-wrapper .bizzen-content-box .contact-form .theme-btn.style-one:hover {
-  background-color: var(--secondary-color);
+  background-color: #cf15ba;
   color: var(--white-color);
 }
 
@@ -5679,7 +5679,7 @@ label {
           flex: 0 0 auto;
   width: 80px;
   height: 80px;
-  background-color: var(--gray-color);
+  background-color: #1ab840;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5690,7 +5690,7 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 36px;
-  color: var(--heading-color);
+  color: #ffffff;
   margin-right: 20px;
   border: 1px solid var(--border-color);
 }
@@ -5823,7 +5823,7 @@ label {
   bottom: 17px;
   right: 0;
   background-color: transparent;
-  color: var(--primary-color);
+  color: white;
 }
 .footer-widget.footer-contact-info-widget .widget-content h6 {
   color: rgba(255, 255, 255, 0.7);
@@ -5837,7 +5837,7 @@ label {
   margin-top: 5px;
   width: 55px;
   height: 1px;
-  background-color: var(--primary-color);
+  background-color: #18b843;
 }
 .footer-widget.footer-contact-info-widget .widget-content ul li {
   line-height: 26px;
@@ -5867,8 +5867,8 @@ label {
   margin-right: 5px;
 }
 .footer-widget.footer-social-widget .widget-content .social-box a:hover {
-  background-color: var(--primary-color);
-  color: var(--heading-color);
+  background-color: #19b744;
+  color: white;
 }
 
 /* Copyright Area */
@@ -5886,13 +5886,13 @@ label {
   margin-right: 20px;
 }
 .copyright-area .copyright-link a:hover {
-  color: var(--primary-color);
+  color: #17b942;
 }
 
 /* Main Footer */
 .main-footer {
   position: relative;
-  background-color: var(--primary-black-color);
+  background-color: #555b6a;
   overflow: hidden;
   z-index: 1;
 }
