@@ -1,969 +1,1568 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <!--====== Required meta tags ======-->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Business, Consulting, Finance">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--====== Title ======-->
-        <title>Crest View Technologies - Business Consulting HTML Template</title>
-        <!--====== Favicon Icon ======-->
-        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-        <!--====== Google Fonts ======-->
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-        <!--====== FontAwesome css ======-->
-        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-        <!--====== Bootstrap css ======-->
-        <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-        <!--====== Slick-popup css ======-->
-        <link rel="stylesheet" href="assets/css/plugins/slick.css">
-        <!--====== Magnific-popup css ======-->
-        <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-        <!--====== Aos css ======-->
-        <link rel="stylesheet" href="assets/css/plugins/aos.css">
-        <!--====== Default css ======-->
-        <link rel="stylesheet" href="assets/css/spacings.css">
-        <!--====== Default css ======-->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <!--====== Start Preloader ======-->
-        <div class="preloader">
-            <div class="loading-wrapper">
-                <div class="loading"></div>
-                <div id="loading-icon"><img src="assets/images/loader.png" alt="loader"></div>
-            </div>
-        </div><!--====== End Preloader ======-->
-        <!--====== Start Overlay ======-->
-        <div class="offcanvas__overlay"></div>
-        <!--=== Start  Header Area  ===-->
-        <header class="header-area header-one">
-            <!--====  Header Navigation  ===-->
-            <div class="header-navigation">
-                <div class="container-fluid">
-                    <!--====  Primary Menu  ===-->
-                    <div class="primary-menu">
-                        <!--====  Site Branding  ===-->
-                        <div class="site-branding">
-                            <a href="index.html" class="brand-logo"><img src="assets/images/home-one/logo/logo-main.png" alt="Brand Logo"></a>
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Business, Consulting, Finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Crest View Technologies - Business Consulting HTML Template</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <!--====== Magnific-popup css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <!--====== Aos css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/spacings.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /*******************************************************/
+/******************* 27. Main Slider *******************/
+/*******************************************************/
+.main-slider-wrap .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .main-slider-wrap .image img {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    max-width: none;
+    min-width: 100%;
+    min-height: 100%; }
+  .main-slider-wrap .image:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, right top, from(#03091F), to(rgba(3, 9, 31, 0.5)));
+    background: -webkit-linear-gradient(left, #03091F 0%, rgba(3, 9, 31, 0.5) 100%);
+    background: -o-linear-gradient(left, #03091F 0%, rgba(3, 9, 31, 0.5) 100%);
+    background: linear-gradient(90deg, #03091F 0%, rgba(3, 9, 31, 0.5) 100%); }
+
+.main-slider-wrap .slider-caption {
+  z-index: 2;
+  min-height: 1000px;
+  position: relative;
+  padding-top: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 100px; }
+  @media only screen and (max-width: 1500px) {
+    .main-slider-wrap .slider-caption {
+      min-height: 700px; } }
+  @media only screen and (max-width: 991px) {
+    .main-slider-wrap .slider-caption {
+      min-height: 600px; } }
+
+.main-slider-wrap .slick-arrow {
+  top: 50%;
+  z-index: 2;
+  opacity: 0.2;
+  font-size: 22px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #07913a;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  @media only screen and (max-width: 575px) {
+    .main-slider-wrap .slick-arrow {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      line-height: 40px; } }
+  .main-slider-wrap .slick-arrow i {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: #07913b; }
+  .main-slider-wrap .slick-arrow.prev {
+    left: 200px; }
+    @media only screen and (max-width: 1500px) {
+      .main-slider-wrap .slick-arrow.prev {
+        left: 25px; } }
+  .main-slider-wrap .slick-arrow.next {
+    right: 200px; }
+    @media only screen and (max-width: 1500px) {
+      .main-slider-wrap .slick-arrow.next {
+        right: 25px; } }
+  .main-slider-wrap .slick-arrow:hover, .main-slider-wrap .slick-arrow:focus {
+    background: #07913a; }
+    .main-slider-wrap .slick-arrow:hover i, .main-slider-wrap .slick-arrow:focus i {
+      color: white; }
+
+.main-slider-wrap:hover .slick-arrow {
+  opacity: 1; }
+
+.main-slider-content {
+  max-width: 610px; }
+  .main-slider-content .sub-title {
+    margin-bottom: 10px;
+    display: inline-block;
+    text-transform: uppercase; }
+  .main-slider-content h1 {
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 1500px) {
+      .main-slider-content h1 {
+        font-size: 60px; } }
+    @media only screen and (max-width: 991px) {
+      .main-slider-content h1 {
+        font-size: 50px; } }
+    @media only screen and (max-width: 767px) {
+      .main-slider-content h1 {
+        font-size: 45px; } }
+    @media only screen and (max-width: 575px) {
+      .main-slider-content h1 {
+        font-size: 40px; } }
+    @media only screen and (max-width: 480px) {
+      .main-slider-content h1 {
+        font-size: 35px; } }
+    @media only screen and (max-width: 375px) {
+      .main-slider-content h1 {
+        font-size: 30px; } }
+  .main-slider-content p {
+    font-size: 18px;
+    max-width: 555px; }
+    @media only screen and (max-width: 480px) {
+      .main-slider-content p {
+        font-size: 16px; } }
+  .main-slider-content .slider-btns {
+    padding-top: 20px; }
+    .main-slider-content .slider-btns .theme-btn {
+      margin-top: 15px; }
+      .main-slider-content .slider-btns .theme-btn:not(:last-child) {
+        margin-right: 30px; }
+  .main-slider-content * {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+.slick-active * {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+.slick-active h1 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+.slick-active p {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.slick-active .slider-btns {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s; }
+
+   .theme-btn.style-nine,
+  a.theme-btn.style-nine {
+    background: #079239; }
+    .theme-btn.style-nine:hover,
+    a.theme-btn.style-nine:hover {
+      color: white;
+      background: #079239; }
+    .theme-btn.style-nine.hover-two,
+    a.theme-btn.style-nine.hover-two {
+      border: 1px solid #079239; }
+
+
+      /** Button style **/
+.theme-btn,
+a.theme-btn {
+  background: #079239;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  padding: 11px 28px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-transform: capitalize; }
+  .theme-btn i,
+  a.theme-btn i {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-left: 10px; }
+  .theme-btn.btn-circle,
+  a.theme-btn.btn-circle {
+    border-radius: 50px;
+    padding-left: 35px;
+    padding-right: 35px; }
+  .theme-btn:hover,
+  a.theme-btn:hover {
+    color: white;
+    background: #cf15b4; }
+    .theme-btn:hover i,
+    a.theme-btn:hover i {
+      margin-left: 15px;
+      margin-right: -5px; }
+  .theme-btn.style-two,
+  a.theme-btn.style-two {
+    padding: 11px 35px;
+    background: #0850b0;
+    border: 1px solid #88a6dd; }
+    .theme-btn.style-two:hover,
+    a.theme-btn.style-two:hover {
+      background: #000000;
+      border-color: #000000; }
+  .theme-btn.style-three,
+  a.theme-btn.style-three {
+    padding: 11px 40px;
+    color: #079239;
+    background: #e5eef6; }
+    .theme-btn.style-three:hover,
+    a.theme-btn.style-three:hover {
+      color: #e5eef6;
+      background: #079239; }
+  .theme-btn.style-four,
+  a.theme-btn.style-four {
+    padding: 11px 35px;
+    background: #24323d; }
+    .theme-btn.style-four:hover,
+    a.theme-btn.style-four:hover {
+      background: #079239; }
+  .theme-btn.style-five,
+  a.theme-btn.style-five {
+    padding: 10px 35px;
+    background: transparent;
+    border: 1px solid white; }
+    .theme-btn.style-five:hover,
+    a.theme-btn.style-five:hover {
+      background: white;
+      color: #104cba; }
+  .theme-btn.style-six,
+  a.theme-btn.style-six {
+    padding: 10px 35px;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #e5e5e5; }
+    .theme-btn.style-six:hover,
+    a.theme-btn.style-six:hover {
+      background: #e5eef6; }
+  .theme-btn.style-seven,
+  a.theme-btn.style-seven {
+    padding: 13px 33px;
+    color: #2F97F7;
+    background: transparent;
+    border: 2px solid #2F97F7; }
+    .theme-btn.style-seven:hover,
+    a.theme-btn.style-seven:hover {
+      color: white;
+      background: #2F97F7; }
+  .theme-btn.style-eight,
+  a.theme-btn.style-eight {
+    border: none;
+    font-size: 18px;
+    padding: 16px 40px;
+    background: #2969E6;
+    font-family: 'Circular Std'; }
+    @media only screen and (max-width: 375px) {
+      .theme-btn.style-eight,
+      a.theme-btn.style-eight {
+        padding: 15px 28px; } }
+    .theme-btn.style-eight i,
+    a.theme-btn.style-eight i {
+      float: right; }
+    .theme-btn.style-eight:hover,
+    a.theme-btn.style-eight:hover {
+      text-decoration: underline;
+      background: #2F97F7; }
+  .theme-btn.style-nine,
+  a.theme-btn.style-nine {
+    background: #079239; }
+    .theme-btn.style-nine:hover,
+    a.theme-btn.style-nine:hover {
+      color: white;
+      background: #079239; }
+    .theme-btn.style-nine.hover-two,
+    a.theme-btn.style-nine.hover-two {
+      border: 1px solid #079239; }
+  .theme-btn.style-ten,
+  a.theme-btn.style-ten {
+    background: #079239; }
+    .theme-btn.style-ten:hover,
+    a.theme-btn.style-ten:hover {
+      background: #a20e96;
+      color: white; }
+      .theme-btn.style-ten:hover i,
+      a.theme-btn.style-ten:hover i {
+        color: white; }
+    .theme-btn.style-ten.hover-two:hover,
+    a.theme-btn.style-ten.hover-two:hover {
+      color: white;
+      background: #a20e96; }
+      .theme-btn.style-ten.hover-two:hover i,
+      a.theme-btn.style-ten.hover-two:hover i {
+        color: white; }
+  .theme-btn.style-eleven,
+  a.theme-btn.style-eleven {
+    background: #a20e96;
+    color: white; }
+    .theme-btn.style-eleven i,
+    a.theme-btn.style-eleven i {
+      color: white; }
+    .theme-btn.style-eleven:hover,
+    a.theme-btn.style-eleven:hover {
+      color: white;
+      background: #079239; }
+      .theme-btn.style-eleven:hover i,
+      a.theme-btn.style-eleven:hover i {
+        color: white; }
+  .theme-btn.style-twelve,
+  a.theme-btn.style-twelve {
+    background: #20C997; }
+    .theme-btn.style-twelve:hover,
+    a.theme-btn.style-twelve:hover {
+      background: white;
+      color: #20C997; }
+  .theme-btn.prev-icon i,
+  a.theme-btn.prev-icon i {
+    margin-left: 0;
+    margin-right: 10px; }
+  .theme-btn.prev-icon:hover i,
+  a.theme-btn.prev-icon:hover i {
+    margin-right: 15px; }
+  .theme-btn.gradient-btn-one, .theme-btn.gradient-btn-two,
+  a.theme-btn.gradient-btn-one,
+  a.theme-btn.gradient-btn-two {
+    z-index: 1;
+    position: relative;
+    border-radius: 4px;
+    padding: 14px 36px;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, color-stop(-21.46%, #A146E8), color-stop(36.39%, #6C63D0), to(#387DB8));
+    background: -webkit-linear-gradient(left, #A146E8 -21.46%, #6C63D0 36.39%, #387DB8 100%);
+    background: -o-linear-gradient(left, #A146E8 -21.46%, #6C63D0 36.39%, #387DB8 100%);
+    background: linear-gradient(90deg, #A146E8 -21.46%, #6C63D0 36.39%, #387DB8 100%); }
+    @media only screen and (max-width: 480px) {
+      .theme-btn.gradient-btn-one, .theme-btn.gradient-btn-two,
+      a.theme-btn.gradient-btn-one,
+      a.theme-btn.gradient-btn-two {
+        padding: 12px 25px; } }
+    .theme-btn.gradient-btn-one:before, .theme-btn.gradient-btn-two:before,
+    a.theme-btn.gradient-btn-one:before,
+    a.theme-btn.gradient-btn-two:before {
+      content: '';
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      border-radius: 4px;
+      position: absolute;
+      background: #030511;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .theme-btn.gradient-btn-one:hover:before, .theme-btn.gradient-btn-two:not(hover):before,
+  a.theme-btn.gradient-btn-one:hover:before,
+  a.theme-btn.gradient-btn-two:not(hover):before {
+    opacity: 1;
+    width: calc(100% - 3px);
+    height: calc(100% - 3px); }
+  .theme-btn.gradient-btn-two:hover:before, .theme-btn.gradient-btn-one:not(hover):before,
+  a.theme-btn.gradient-btn-two:hover:before,
+  a.theme-btn.gradient-btn-one:not(hover):before {
+    width: 0;
+    height: 0;
+    opacity: 0; }
+  @media only screen and (max-width: 480px) {
+    .theme-btn,
+    a.theme-btn {
+      font-size: 14px;
+      padding: 12px 25px; } }
+
+.learn-more {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .learn-more:hover i {
+    margin-left: 10px; }
+  .learn-more i {
+    font-size: 13px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin: 2px 0 0 8px; }
+
+.read-more {
+  color: #000F5C;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: underline;
+  font-family: 'Circular Std'; }
+  .read-more i {
+    float: right;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-left: 5px;
+    color: #FF7A41; }
+  .read-more:hover {
+    color: #2969E6;
+    text-decoration: underline; }
+    .read-more:hover i {
+      color: #2969E6;
+      margin-left: 8px; }
+
+    </style>
+</head>
+
+<body>
+    <!--====== Start Preloader ======-->
+    <div class="preloader">
+        <div class="loading-wrapper">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="assets/images/loader.png" alt="loader"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
+    <!--====== Start Overlay ======-->
+    <div class="offcanvas__overlay"></div>
+    <!--=== Start  Header Area  ===-->
+    <header class="header-area header-one">
+        <!--====  Header Navigation  ===-->
+        <div class="header-navigation">
+            <div class="container-fluid">
+                <!--====  Primary Menu  ===-->
+                <div class="primary-menu">
+                    <!--====  Site Branding  ===-->
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="assets/images/home-one/logo/logo-main.png"
+                                alt="Brand Logo"></a>
+                    </div>
+                    <!--=== Main Menu ===-->
+                    <div class="theme-nav-menu">
+                        <!--=== Menu Top ===-->
+                        <div class="theme-menu-top d-block d-xl-none">
+                            <div class="site-branding">
+                                <a href="index.html" class="brand-logo"><img
+                                        src="assets/images/home-one/logo/logo-main.png" alt="Brand Logo"></a>
+                            </div>
                         </div>
                         <!--=== Main Menu ===-->
-                        <div class="theme-nav-menu">
-                            <!--=== Menu Top ===-->
-                            <div class="theme-menu-top d-block d-xl-none">
-                                <div class="site-branding">
-                                    <a href="index.html" class="brand-logo"><img src="assets/images/home-one/logo/logo-main.png" alt="Brand Logo"></a>
-                                </div>
-                            </div>
-                            <!--=== Main Menu ===-->
-                            <nav class="main-menu">
-                                <ul>
-                                    <li class="menu-item has-children"><a href="index.html">Home</a></li>
-                                    <li class="menu-item"><a href="about.html">About</a></li>
-                                    <li class="menu-item has-children"><a href="services.html">Services</a>
-                                       
-                                    </li>
-                                    <li class="menu-item has-children"><a href="project.html">Projects</a>
-                                        <!-- <ul class="sub-menu">
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children"><a href="index.html">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item has-children"><a href="services.html">Services</a>
+
+                                </li>
+                                <li class="menu-item has-children"><a href="project.html">Projects</a>
+                                    <!-- <ul class="sub-menu">
                                             <li><a href="project.html">Projects</a></li>
                                             <li><a href="project-details.html">Project Details</a></li>
                                         </ul> -->
-                                    </li>
-                                    <li class="menu-item has-children"><a href="blog-grid.html">Blog</a>
-                                        <!-- <ul class="sub-menu">
+                                </li>
+                                <li class="menu-item has-children"><a href="blog-grid.html">Blog</a>
+                                    <!-- <ul class="sub-menu">
                                             <li><a href="blog-grid.html">Blog Grid</a></li>
                                             <li><a href="blog-details.html">Blog Details</a></li>
                                         </ul> -->
-                                    </li>
-                            
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <!--=== Nav Button ===-->
-                            <div class="theme-nav-button mt-20 d-block d-md-none">
-                                <a href="contact.html" class="theme-btn style-one">Get A Quote<i class="far fa-arrow-right"></i></a>
+                                </li>
+
+                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!--=== Nav Button ===-->
+                        <div class="theme-nav-button mt-20 d-block d-md-none">
+                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                                    class="far fa-arrow-right"></i></a>
+                        </div>
+                        <!--===  Menu Bottom ===-->
+                        <div class="theme-menu-bottom mt-50 d-block d-xl-none">
+                            <h5>Follow Us</h5>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== Header Nav Right ===-->
+                    <div class="nav-right-item">
+                        <div class="nav-button d-none d-md-block">
+                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                                    class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--=== End  Header Area  ===-->
+
+    <!--======  Smooth Wrapper  ======-->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!-- Main Slider Start -->
+                <section class="main-slider bg-black text-white">
+                    <div class="main-slider-wrap">
+                        <div class="main-slider-item">
+                            <div class="image">
+                                <img src="assets/images/slider/slide1.webp" alt="Slider" />
                             </div>
-                            <!--===  Menu Bottom ===-->
-                            <div class="theme-menu-bottom mt-50 d-block d-xl-none">
-                                <h5>Follow Us</h5>
-                                <ul class="social-link">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                </ul>
+                            <div class="slider-caption">
+                                <div class="container">
+                                    <div class="main-slider-content">
+                                        <span class="sub-title">Innovating with Intelligence</span>
+                                        <h1>Empowering Businesses with Smart Tech Solutions</h1>
+                                        <p>
+                                            At Crest View Technologies, we deliver cutting-edge IT
+                                            services, digital solutions, and cybersecurity expertise to
+                                            help your business thrive in a connected world.
+                                        </p>
+                                        <div class="slider-btns">
+                                            <a href="about.html" class="theme-btn style-ten">Discover More <i
+                                                    class="far fa-paper-plane"></i></a>
+                                            <a href="about.html" class="theme-btn style-eleven">Get Started <i
+                                                    class="far fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!--=== Header Nav Right ===-->
-                        <div class="nav-right-item">
-                            <div class="nav-button d-none d-md-block">
-                                <a href="contact.html" class="theme-btn style-one">Get A Quote<i class="far fa-arrow-right"></i></a>
+                        <div class="main-slider-item">
+                            <div class="image">
+                                <img src="assets/images/slider/slide2.webp" alt="Slider" />
                             </div>
-                            <div class="navbar-toggler">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            <div class="slider-caption">
+                                <div class="container">
+                                    <div class="main-slider-content">
+                                        <span class="sub-title">Driving Digital Transformation</span>
+                                        <h1>Building Future-Ready Software & IT Solutions</h1>
+                                        <p>
+                                            From innovative web development to enterprise-grade
+                                            software, Crest View Technologies empowers businesses with
+                                            reliable and scalable digital solutions.
+                                        </p>
+                                        <div class="slider-btns">
+                                            <a href="about.html" class="theme-btn style-ten">Discover More <i
+                                                    class="far fa-paper-plane"></i></a>
+                                            <a href="about.html" class="theme-btn style-eleven">Get Started <i
+                                                    class="far fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider-item">
+                            <div class="image">
+                                <img src="assets/images/slider/slide3.webp" alt="Slider" />
+                            </div>
+                            <div class="slider-caption">
+                                <div class="container">
+                                    <div class="main-slider-content">
+                                        <span class="sub-title">Your Trusted Technology Partner</span>
+                                        <h1>We Secure, Build & Empower Digital Transformation</h1>
+                                        <p>
+                                            At Crest View Technologies, we combine innovation and
+                                            expertise to deliver reliable IT, software, and
+                                            cybersecurity solutions that drive business growth.
+                                        </p>
+                                        <div class="slider-btns">
+                                            <a href="about.html" class="theme-btn style-ten">Discover More <i
+                                                    class="far fa-paper-plane"></i></a>
+                                            <a href="about.html" class="theme-btn style-eleven">Get Started <i
+                                                    class="far fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Main Slider End -->
+
+                <!--======  Start Service Section  ======-->
+                <section class="bizzen-service_one pt-115 pb-115 bg_cover"
+                    style="background-image: url(assets/images/home-one/bg/service-bg.png);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <!--=== Section Title ===-->
+                                <div class="section-title text-center mb-60">
+                                    <span class="sub-title" data-aos="fade-up" data-aos-duration="1000">OUR
+                                        SERVICES</span>
+                                    <h3 class="text-anm">How Can We Help You In The Tech Sector</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <!--=== Bizzen Service Item ===-->
+                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="service-inner-content">
+                                        <div class="icon">
+                                            <img src="assets/images/home-one/icon/icon1.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="service-details.html">Cloud & DevOps
+                                                    Consulting</a></h4>
+                                            <p>Delivering fast, effective solutions to complex infrastructure
+                                                challenges. We streamline your deployment and optimize your cloud
+                                                environment for peak performance and scalability.</p>
+                                            <a href="service-details.html" class="read-more style-one">GET STARTED <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <!--=== Bizzen Service Item ===-->
+                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1200">
+                                    <div class="service-inner-content">
+                                        <div class="icon">
+                                            <img src="assets/images/home-one/icon/icon2.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="service-details.html">AI & Data Strategy</a></h4>
+                                            <p>Transforming raw data into intelligent action. We help you build and
+                                                implement machine learning models and data analytics frameworks to
+                                                unlock insights and drive automated decision-making.</p>
+                                            <a href="service-details.html" class="read-more style-one">GET STARTED <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <!--=== Bizzen Service Item ===-->
+                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1400">
+                                    <div class="service-inner-content">
+                                        <div class="icon">
+                                            <img src="assets/images/home-one/icon/icon3.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="service-details.html">Digital Transformation</a>
+                                            </h4>
+                                            <p>Future-proofing your organization. We guide you through modernizing
+                                                legacy systems, adopting new technologies, and cultivating a culture of
+                                                innovation for sustained competitive advantage.</p>
+                                            <a href="service-details.html" class="read-more style-one">GET STARTED <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <!--=== Bizzen Service Item ===-->
+                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1600">
+                                    <div class="service-inner-content">
+                                        <div class="icon">
+                                            <img src="assets/images/home-one/icon/icon4.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="service-details.html">Cybersecurity Services</a>
+                                            </h4>
+                                            <p>Protecting your digital assets proactively. From vulnerability
+                                                assessments to implementing advanced security architectures, we ensure
+                                                your business is resilient against evolving threats.</p>
+                                            <a href="service-details.html" class="read-more style-one">GET STARTED <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--=== Text Box ===-->
+                                <div class="text-box text-center mt-30" data-aos="fade-up" data-aos-duration="1800">
+                                    <p>We Strive To Lead The way In The <a href="services.html">business Know All
+                                            Services <i class="far fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Service Section  ======-->
+                <!--======  Start About Section  ======-->
+                <section class="bizzen-about_one pt-120 pb-120">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-10">
+                                <!--=== Bizzen Image ===-->
+                                <div class="bizzen-image mb-5 mb-xl-0" data-aos="fade-up" data-aos-duration="800">
+                                    <img src="assets/images/home-one/about/about-eight2.jpg" alt="about image">
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-10">
+                                <!--=== Bizzen Content Box ===-->
+                                <div class="bizzen-content-box">
+                                    <div class="section-title mb-50">
+                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">About
+                                            us</span>
+                                        <h3 class="text-anm">The Journey Behind Our Strategic Innovation</h3>
+                                    </div>
+                                    <div class="experience-text-wrap">
+                                        <div class="experience-box" data-aos="fade-up" data-aos-duration="1000">
+                                            <h2>30+ <span>Years of Technological Excellence</span></h2>
+                                        </div>
+                                        <div class="text-box">
+                                            <p data-aos="fade-up" data-aos-duration="1000">Our mission is to empower
+                                                businesses of all sizes to thrive in an ever-changing digital
+                                                marketplace. In a dynamic business environment, the key to success lies
+                                                in having a partner who can navigate technological complexity and
+                                                deliver future-proof solutions.</p>
+                                            <ul class="check-list style-one" data-aos="fade-up"
+                                                data-aos-duration="1200">
+                                                <li><i class="fas fa-check-circle"></i>100+ Successful Project
+                                                    Deployments</li>
+                                                <li><i class="fas fa-check-circle"></i>Proven & Scalable Framework for
+                                                    Guaranteed Outcomes</li>
+                                                <li><i class="fas fa-check-circle"></i>Specific, Time-Bound Results with
+                                                    a Performance Guarantee</li>
+                                            </ul>
+                                            <div class="bizzen-button" data-aos="fade-up" data-aos-duration="1400">
+                                                <a href="about.html" class="theme-btn style-one">EXPLORE MORE <i
+                                                        class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End About Section  ======-->
+                <!--======  Start Achievement Section  ======-->
+                <section class="bizzen-counter_one bg_cover pt-115 pb-80"
+                    style="background-image: url(assets/images/home-one/bg/counter-bg.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <!--=== Bizzen Content Box ===-->
+                                <div class="bizzen-content-box">
+                                    <div class="section-title text-white">
+                                        <span class="sub-title" data-aos="fade-down"
+                                            data-aos-duration="1000">Achievement</span>
+                                        <h2 class="text-anm">Empowering Success for the World's Leading Brands</h2>
+                                    </div>
+                                    <p data-aos="fade-up" data-aos-duration="1200">Our mission is to empower businesses
+                                        of all sizes to thrive in an ever-changing digital landscape. In today's dynamic
+                                        business environment, we deliver the technological excellence and strategic
+                                        insight that industry leaders rely on. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <!--=== Bizzen Counter Item ===-->
+                                <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="number">
+                                        <h2><span class="counter">2</span>M</h2>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Solutions Deployed Globally</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <!--=== Bizzen Counter Item ===-->
+                                <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1200">
+                                    <div class="number">
+                                        <h2><span class="counter">52</span>+</h2>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Industries Transformed</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <!--=== Bizzen Counter Item ===-->
+                                <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1200">
+                                    <div class="number">
+                                        <h2><span class="counter">99</span>%</h2>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Client Success Rate</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <!--=== Bizzen Counter Item ===-->
+                                <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up"
+                                    data-aos-duration="1400">
+                                    <div class="number">
+                                        <h2><span class="counter">5</span>K+</h2>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Ranked Technology Partner</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Achievement Section  ======-->
+                <!--======  Start Process Section  ======-->
+                <section class="bizzen-proces_one py-5 py-xl-0 my-xl-0">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-12">
+                                <!--=== Section Title ===-->
+                                <div class="section-title mb-5 mb-xl-0">
+                                    <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">HOW ITS
+                                        WORKS</span>
+                                    <h2 class="text-anm">Our Blueprint for Digital Transformation</h2>
+                                    <p>A proven, three-step methodology to architect your success, from initial vision
+                                        to measurable growth.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <!--=== Section Title ===-->
+                                <div class="bizzen-work-list">
+                                    <div class="bizzen-process-item style-one" data-aos="fade-up"
+                                        data-aos-duration="1000">
+                                        <div class="number">
+                                            01
+                                        </div>
+                                        <div class="content">
+                                            <h5>Strategic Discovery & Vision</h5>
+                                        </div>
+                                    </div>
+                                    <div class="bizzen-process-item style-one" data-aos="fade-up"
+                                        data-aos-duration="1200">
+                                        <div class="number">
+                                            02
+                                        </div>
+                                        <div class="content">
+                                            <h5>Solution Design & Validation</h5>
+                                        </div>
+                                    </div>
+                                    <div class="bizzen-process-item style-one" data-aos="fade-up"
+                                        data-aos-duration="1400">
+                                        <div class="number">
+                                            03
+                                        </div>
+                                        <div class="content">
+                                            <h5>Expert Execution & Partnership</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <!--=== Text Box ===-->
+                                <div class="text-box mt-5 mt-md-0" data-aos="fade-up" data-aos-duration="1600">
+                                    <span>Client Satisfaction Rate</span>
+                                    <h2>98%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Process Section  ======-->
+                <!--====== Start Project Section ======-->
+                <section class="bizzen-project-sec pt-120 pb-90">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-7 col-lg-10">
+                                <!--=== Section Title ===-->
+                                <div class="section-title text-center mb-60">
+                                    <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Case
+                                        Studies</span>
+                                    <h3 class="text-anm">Lead with Confidence And Full Control</h3>
+                                    <p>Explore how our strategic technology solutions have empowered industry leaders to
+                                        overcome complex challenges and achieve transformative results.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--=== Bizzen Project List ===-->
+                                <div class="bizzen-project-list">
+                                    <!--=== Bizzen Project Item ===-->
+                                    <div class="bizzen-project-item style-one mb-30">
+                                        <div class="project-inner bg_cover"
+                                            style="background-image: url(assets/images/home-one/project/slide1.webp);">
+                                            <div class="content">
+                                                <span class="sub-title">AI & Machine Learning Implementation</span>
+                                                <h4 class="title"><a href="project-details.html">AI-Powered Analytics:
+                                                        Driving Data-Led Decision Making</a></h4>
+                                                <p>A global retail chain struggled to leverage its vast customer data
+                                                    for personalized marketing and inventory forecasting, leading to
+                                                    missed sales opportunities and stock inefficiencies.</p>
+                                                <div class="tag-button">
+                                                    <a href="#" class="theme-btn style-two">Corporate</a>
+                                                    <a href="#" class="theme-btn style-two"> Artificial Intelligence</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--=== Bizzen Project Item ===-->
+                                    <div class="bizzen-project-item style-one mb-30">
+                                        <div class="project-inner bg_cover"
+                                            style="background-image: url(assets/images/home-one/project/slide2.webp);">
+                                            <div class="content">
+                                                <span class="sub-title"> DevOps & Automation</span>
+                                                <h4 class="title"><a href="project-details.html">CI/CD Pipeline
+                                                        Implementation: Accelerating Time-to-Market</a></h4>
+                                                <p>A mobile gaming company with a legacy development process suffered
+                                                    from slow, error-prone releases that hampered its ability to compete
+                                                    in a fast-paced market.</p>
+                                                <div class="tag-button">
+                                                    <a href="#" class="theme-btn style-two">Corporate </a>
+                                                    <a href="#" class="theme-btn style-two">DevOps</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--=== Bizzen Project Item ===-->
+                                    <div class="bizzen-project-item style-one mb-30">
+                                        <div class="project-inner bg_cover"
+                                            style="background-image: url(assets/images/home-one/project/slide3.webp);">
+                                            <div class="content">
+                                                <span class="sub-title">Legacy System Modernization</span>
+                                                <h4 class="title"><a href="project-details.html">Legacy System
+                                                        Modernization: Unlocking Innovation</a></h4>
+                                                <p>An established manufacturing company was constrained by its
+                                                    20-year-old monolithic ERP system, which was costly to maintain and
+                                                    incompatible with modern IoT and analytics tools.</p>
+                                                <div class="tag-button">
+                                                    <a href="#" class="theme-btn style-two">Corporate</a>
+                                                    <a href="#" class="theme-btn style-two">Digital Transformation</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Project Section ======-->
+                <!--====== Start Team Section ======-->
+                <section class="bizzen-team_one pt-115 p-r z-1">
+                    <div class="team-bg bg_cover" style="background-color: #555b6a;"></div>
+                    <!-- style="background-image: url(assets/images/home-one/bg/team-bg.jpg);" -->
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-7 col-lg-10">
+                                <!--=== Section Title ===-->
+                                <div class="section-title text-center text-white mb-60">
+                                    <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Our
+                                        Teammate</span>
+                                    <h3 class="text-anm">Meet Our Expert Leadership Team</h3>
+                                    <p>The strategic minds behind our success. Our diverse leadership team brings
+                                        decades of combined experience in technology, finance, and marketing to
+                                        architect solutions that drive tangible business outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <!--=== Bizzen Team Item ===-->
+                                <div class="bizzen-team-item style-one mb-40" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="member-image">
+                                        <img src="assets/images/home-one/team/team-1.jpg" alt="team image">
+                                        <div class="hover-content">
+                                            <div class="content-wrap">
+                                                <div class="social-box">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                </div>
+                                                <div class="member-info text-center">
+                                                    <h4 class="title"><a href="team-details.html">Esther Howard</a></h4>
+                                                    <span class="position">Chief Technology Officer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <!--=== Bizzen Team Item ===-->
+                                <div class="bizzen-team-item style-one mb-40" data-aos="fade-up"
+                                    data-aos-duration="1200">
+                                    <div class="member-image">
+                                        <img src="assets/images/home-one/team/team-2.jpg" alt="team image">
+                                        <div class="hover-content">
+                                            <div class="content-wrap">
+                                                <div class="social-box">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                </div>
+                                                <div class="member-info text-center">
+                                                    <h4 class="title"><a href="team-details.html">Jenny Wilson</a></h4>
+                                                    <span class="position">Head of Digital Strategy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <!--=== Bizzen Team Item ===-->
+                                <div class="bizzen-team-item style-one mb-40" data-aos="fade-up"
+                                    data-aos-duration="1400">
+                                    <div class="member-image">
+                                        <img src="assets/images/home-one/team/team-3.jpg" alt="team image">
+                                        <div class="hover-content">
+                                            <div class="content-wrap">
+                                                <div class="social-box">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                </div>
+                                                <div class="member-info text-center">
+                                                    <h4 class="title"><a href="team-details.html">Wade Warren</a></h4>
+                                                    <span class="position">Chief Financial Officer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <!--=== Bizzen Team Item ===-->
+                                <div class="bizzen-team-item style-one mb-40" data-aos="fade-up"
+                                    data-aos-duration="1600">
+                                    <div class="member-image">
+                                        <img src="assets/images/home-one/team/team-4.jpg" alt="team image">
+                                        <div class="hover-content">
+                                            <div class="content-wrap">
+                                                <div class="social-box">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                </div>
+                                                <div class="member-info text-center">
+                                                    <h4 class="title"><a href="team-details.html">Devon Lane</a></h4>
+                                                    <span class="position">Head of Marketing & Growth</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Team Section ======-->
+                <!--====== Start Testimonial Section ======-->
+                <section class="bizzen-testimonial_one pt-80 pb-110">
+                    <div class="testimonial-map-bg bg_cover"
+                        style="background-image: url(assets/images/home-one/testimonial/map-bg.png);"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--=== Quote Box ===-->
+                                <div class="quote-box text-center mb-40">
+                                    <img src="assets/images/home-one/testimonial/quote.png" alt="quote">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <!--=== Testimonial Slider ===-->
+                                <div class="testimonial-slider">
+                                    <!--=== Bizzen Testimonial Item ===-->
+                                    <div class="bizzen-testimonial-item style-one">
+                                        <div class="testimonial-content">
+                                            <p>“The strategic cloud migration they executed for us cut our operational
+                                                costs by 40% and eliminated system downtime. Their team didn't just
+                                                implement technology; they delivered a seamless transition that our
+                                                entire business felt.” </p>
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="author-thumb-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/home-one/testimonial/testi-author-1.jpg"
+                                                        alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Sarah Jenkins</h5>
+                                                    <span class="position">CTO, InnovateSphere</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--=== Bizzen Testimonial Item ===-->
+                                    <div class="bizzen-testimonial-item style-one">
+                                        <div class="testimonial-content">
+                                            <p>“We were struggling with data silos and outdated analytics. Their team
+                                                built us a unified data platform that provided real-time insights we
+                                                never had before, fundamentally changing how we make strategic
+                                                decisions.” </p>
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="author-thumb-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/home-one/testimonial/testi-author-2.jpg"
+                                                        alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Michael Chen</h5>
+                                                    <span class="position">VP of Operations, DataCore Solutions</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Testimonial Section ======-->
+                <!--====== Start Contact Section ======-->
+                <section class="bizzen-contact_one">
+                    <!-- Contact Wrapper -->
+                    <div class="contact-wrapper">
+                        <!--=== Bizzen Bg ===-->
+                        <div class="contact-bg-wrap">
+                            <div class="contact-bg bg_cover"
+                                style="background-image: url(assets/images/home-one/contact/img2.png);"></div>
+                        </div>
+                        <!--=== Bizzen Contact Wrapper ===-->
+                        <div class="contact-form-wrapper mb-120">
+                            <!--=== Bizzen Content Box ===-->
+                            <div class="bizzen-content-box">
+                                <div class="section-title text-white">
+                                    <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Contact
+                                        Us</span>
+                                    <h3 class="text-anm">Get Your Free Technology Consultation Today</h3>
+
+                                </div>
+                                <p class="mb-50" data-aos="fade-up" data-aos-duration="1200">Need help with a digital
+                                    project or have a question about our services? Get in touch with our team.</p>
+                                <form autocomplete="off" class="contact-form" data-aos="fade-up"
+                                    data-aos-duration="1400">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Name *</label>
+                                                <input type="text" class="form_control" name="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Phone No *</label>
+                                                <input type="text" class="form_control" name="phone" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Email Address *</label>
+                                                <input type="text" class="form_control" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Subject *</label>
+                                                <input type="text" class="form_control" name="subject" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label>Message *</label>
+                                                <textarea name="message" class="form_control" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mt-10">
+                                                <button class="theme-btn style-one">SEND MESSAGE <i
+                                                        class="far fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Contact Section ======-->
+                <!--====== Start Blog Section ======-->
+                <section class="bizzen-blog-sec pt-110 pb-90">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-5 col-lg-10">
+                                <!--=== Bizzen Content Box ===-->
+                                <div class="bizzen-content-box mb-5 mb-xl-0 text-center text-xl-start">
+                                    <div class="section-title">
+                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">READ OUR
+                                            BLOG</span>
+                                        <h2 class="text-anm">Explore Our Latest Insights & News</h2>
+                                        <p>Stay ahead of the curve with expert articles on technology, strategy, and
+                                            business innovation.</p>
+                                    </div>
+                                    <div class="bizzen-button" data-aos="fade-up" data-aos-duration="1000">
+                                        <a href="blog-grid.html" class="theme-btn style-one">SEE ALL PROJECT <i
+                                                class="far fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-10">
+                                <!--=== Bizzen Blog List ===-->
+                                <div class="bizzen-blog-list">
+                                    <!--=== Bizzen Blog Item ===-->
+                                    <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up"
+                                        data-aos-duration="1000">
+                                        <div class="post-thumbnail">
+                                            <img src="assets/images/home-one/blog/blog-five1.webp" alt="Post Thumbnail">
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="post-meta">
+                                                <span><a href="#">Technology </a></span>
+                                                <span>June 7, 2025</span>
+                                            </div>
+                                            <h5 class="title"><a href="blog-details.html">Why a Robust Cloud Strategy is
+                                                    Non-Negotiable for Modern Enterprises</a></h5>
+                                            <p>In today's digital-first landscape, a secure and scalable cloud
+                                                foundation is the backbone of agility and innovation. We break down the
+                                                critical components every business leader must prioritize.</p>
+                                            <a href="blog-details.html" class="read-more style-one">READ MORE <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--=== Bizzen Blog Item ===-->
+                                    <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up"
+                                        data-aos-duration="1200">
+                                        <div class="post-thumbnail">
+                                            <img src="assets/images/home-one/blog/blog-five2.webp" alt="Post Thumbnail">
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="post-meta">
+                                                <span><a href="#">Strategy </a></span>
+                                                <span>June 1, 2025</span>
+                                            </div>
+                                            <h5 class="title"><a href="blog-details.html">Architecting Success: Building
+                                                    a Future-Proof Digital Transformation Roadmap</a></h5>
+                                            <p>Moving from legacy systems to a dynamic, data-driven organization
+                                                requires a clear blueprint. Discover the key phases for a successful and
+                                                sustainable transformation journey.</p>
+                                            <a href="blog-details.html" class="read-more style-one">READ MORE <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--=== Bizzen Blog Item ===-->
+                                    <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up"
+                                        data-aos-duration="1400">
+                                        <div class="post-thumbnail">
+                                            <img src="assets/images/home-one/blog/blog-five3.webp" alt="Post Thumbnail">
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="post-meta">
+                                                <span><a href="#">Industry Insights </a></span>
+                                                <span>June 17, 2025</span>
+                                            </div>
+                                            <h5 class="title"><a href="blog-details.html">Key Considerations for Tech
+                                                    Consultants in the Fintech Sector</a></h5>
+                                            <p>Navigating the unique blend of innovation, security, and compliance in
+                                                financial technology. Learn the critical factors for delivering
+                                                successful projects in this highly regulated space.</p>
+                                            <a href="blog-details.html" class="read-more style-one">READ MORE <i
+                                                    class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Blog Section ======-->
+                <!--====== Start Company Section ======-->
+                <section class="bizzen-company-sec pb-120">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-box text-center mb-30" data-aos="fade-up" data-aos-duration="1000">
+                                    <h6>Trusted by Industry Leaders Worldwide</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <!--=== Clients Slider ===-->
+                        <div class="clients-slider" data-aos="fade-up" data-aos-duration="1200">
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-1.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-2.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-3.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-4.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-5.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-1.png" alt="Client Logo">
+                                </div>
+                            </div>
+                            <!--=== Bizzen Client Item ===-->
+                            <div class="bizzen-client-item">
+                                <div class="client-img">
+                                    <img src="assets/images/home-one/company/client-2.png" alt="Client Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--====== End Company Section ======-->
+            </main>
+            <!--======  Start Footer  ======-->
+            <footer class="main-footer">
+                <div class="footer-shape"><img src="assets/images/footer/footer-shape.png" alt="footer shape"></div>
+                <!--=== Footer Widget Wrapper ===-->
+                <div class="footer-widget-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!--=== Footer Widget ===-->
+                                <div class="footer-widget footer-about-widget pt-100" data-aos="fade-up"
+                                    data-aos-duration="800">
+                                    <div class="widget-content">
+                                        <div class="footer-logo mb-20">
+                                            <a href="index.html"><img src="assets/images/home-one/logo/logo-main.png"
+                                                    alt="logo white"></a>
+                                        </div>
+                                        <p class="mb-20">Sign up to searing weekly newsletter to get the latest updates
+                                        </p>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form_control"
+                                                    placeholder="Enter Email Address" name="email" required>
+                                                <button class="submit-btn"><i class="far fa-paper-plane"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!--=== Footer Widget Wrap ===-->
+                                <div class="footer-widget-inner">
+                                    <!--=== Footer Top ===-->
+                                    <div class="footer-top" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="big-text">Let’s talk Business?</div>
+                                    </div>
+                                    <div class="footer-widget-area">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <!--=== Footer Widget ===-->
+                                                <div class="footer-widget footer-contact-info-widget mb-40"
+                                                    data-aos="fade-up" data-aos-duration="1200">
+                                                    <div class="widget-content">
+                                                        <h6>Headquarters - USA</h6>
+                                                        <ul>
+                                                            <li>
+                                                                Crest View Technologies, mg Manchester, USA
+                                                            </li>
+                                                            <li>
+                                                                <a href="tel:+91 9898989897">+91 9898989897</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <!--=== Footer Widget ===-->
+                                                <div class="footer-widget footer-contact-info-widget mb-40"
+                                                    data-aos="fade-up" data-aos-duration="1400">
+                                                    <div class="widget-content">
+                                                        <h6>Headquarters - UK</h6>
+                                                        <ul>
+                                                            <li>
+                                                                Crest View Technologies, West Rond, MT 94251-030
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="mailto:company@gmail.com">info@crestview.com</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <!--=== Footer Widget ===-->
+                                                <div class="footer-widget footer-social-widget mb-40" data-aos="fade-up"
+                                                    data-aos-duration="1600">
+                                                    <h4 class="widget-title">Follow Us:</h4>
+                                                    <div class="widget-content">
+                                                        <div class="social-box">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
-        </header><!--=== End  Header Area  ===-->
-        <!--======  Smooth Wrapper  ======-->
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-                <main>
-                    <!--======  Start Hero Section  ======-->
-                    <section class="bizzen-hero">
-                        <div class="bizzen-hero_one bg_cover" style="background-image: url(assets/images/home-one/hero/hero-bg.jpg);">
-                            
-                            <div class="hero-bg-shape"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <!--=== Hero Content ===-->
-                                        <div class="hero-content">
-                                            <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Business Consulting Agency</span>
-                                            <h1 class="text-anm">Elevating Business Through Strategy & Execution</h1>
-                                        
-                                            <div class="hero-button" data-aos="fade-up" data-aos-duration="1400">
-                                                <a href="contact.html" class="theme-btn style-one">LETS TALK WITH US<i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <!--=== Text Box ===-->
-                                        <div class="text-box mb-5 mb-xl-0" data-aos="fade-up" data-aos-duration="1000">
-                                            <div class="avatar-list">
-                                                <img src="assets/images/home-one/hero/team-1.jpg" alt="avatar">
-                                                <img src="assets/images/home-one/hero/team-2.jpg" alt="avatar">
-                                                <img src="assets/images/home-one/hero/team-3.jpg" alt="avatar">
-                                                <img src="assets/images/home-one/hero/team-4.jpg" alt="avatar">
-                                            </div>
-                                            <h4>Clients Empowered Worldwide</span></h4>
-                                            <p>Our mission is to empower businesses of all sizes to thrive in an ever-changing marketplace. In today's dynamic business environment, success demands more than just ideas—it requires precise strategy, flawless execution, and a partner dedicated to your growth.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <!--=== Hero Image ===-->
-                                        <div class="hero-image text-center" data-aos="fade-up" data-aos-duration="1200">
-                                            <img src="assets/images/home-one/hero/service-details.jpg" alt="hero image">
-                                            <div class="hero-rating-box">
-                                                <h2>4.98</h2>
-                                                <div class="ratings">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                                <p>Best rated agency</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!--=== Copyright Area ===-->
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--=== Copyright Text ===-->
+                                <div class="copyright-text text-md-start text-center">
+                                    <p>&copy; All copyright 2025 by Crest View Technologies</p>
                                 </div>
                             </div>
-                        </div>
-                    </section><!--======  End Hero Section  ======-->
-                    <!--======  Start Service Section  ======-->
-                    <section class="bizzen-service_one pt-115 pb-115 bg_cover" style="background-image: url(assets/images/home-one/bg/service-bg.png);">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-6 col-lg-8">
-                                    <!--=== Section Title ===-->
-                                    <div class="section-title text-center mb-60">
-                                        <span class="sub-title" data-aos="fade-up" data-aos-duration="1000">OUR SERVICES</span>
-                                        <h3 class="text-anm">How Can We Help You In The Tech Sector</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-3 col-md-6">
-                                    <!--=== Bizzen Service Item ===-->
-                                    <div class="bizzen-service-item style-one mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="service-inner-content">
-                                            <div class="icon">
-                                                <img src="assets/images/home-one/icon/icon1.svg" alt="icon">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title"><a href="service-details.html">Cloud & DevOps Consulting</a></h4>
-                                                <p>Delivering fast, effective solutions to  complex infrastructure challenges. We streamline your deployment and optimize your cloud environment for peak performance and scalability.</p>
-                                                <a href="service-details.html" class="read-more style-one">GET STARTED <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <!--=== Bizzen Service Item ===-->
-                                    <div class="bizzen-service-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
-                                        <div class="service-inner-content">
-                                            <div class="icon">
-                                                <img src="assets/images/home-one/icon/icon2.svg" alt="icon">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title"><a href="service-details.html">AI & Data Strategy</a></h4>
-                                                <p>Transforming raw data into intelligent action. We help you build and implement machine learning models and data analytics frameworks to unlock insights and drive automated decision-making.</p>
-                                                <a href="service-details.html" class="read-more style-one">GET STARTED <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <!--=== Bizzen Service Item ===-->
-                                    <div class="bizzen-service-item style-one mb-30" data-aos="fade-up" data-aos-duration="1400">
-                                        <div class="service-inner-content">
-                                            <div class="icon">
-                                                <img src="assets/images/home-one/icon/icon3.svg" alt="icon">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title"><a href="service-details.html">Digital Transformation</a></h4>
-                                                <p>Future-proofing your organization. We guide you through modernizing legacy systems, adopting new technologies, and cultivating a culture of innovation for sustained competitive advantage.</p>
-                                                <a href="service-details.html" class="read-more style-one">GET STARTED <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <!--=== Bizzen Service Item ===-->
-                                    <div class="bizzen-service-item style-one mb-30" data-aos="fade-up" data-aos-duration="1600">
-                                        <div class="service-inner-content">
-                                            <div class="icon">
-                                                <img src="assets/images/home-one/icon/icon4.svg" alt="icon">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title"><a href="service-details.html">Cybersecurity Services</a></h4>
-                                                <p>Protecting your digital assets proactively. From vulnerability assessments to implementing advanced security architectures, we ensure your business is resilient against evolving threats.</p>
-                                                <a href="service-details.html" class="read-more style-one">GET STARTED <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=== Text Box ===-->
-                                    <div class="text-box text-center mt-30" data-aos="fade-up" data-aos-duration="1800">
-                                        <p>We Strive To Lead The way In The <a href="services.html">business Know All Services <i class="far fa-arrow-right"></i></a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--======  End Service Section  ======-->
-                    <!--======  Start About Section  ======-->
-                    <section class="bizzen-about_one pt-120 pb-120">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-4 col-lg-10">
-                                    <!--=== Bizzen Image ===-->
-                                    <div class="bizzen-image mb-5 mb-xl-0" data-aos="fade-up" data-aos-duration="800">
-                                        <img src="assets/images/home-one/about/about-eight2.jpg" alt="about image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-8 col-lg-10">
-                                    <!--=== Bizzen Content Box ===-->
-                                    <div class="bizzen-content-box">
-                                        <div class="section-title mb-50">
-                                            <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">About us</span>
-                                            <h3 class="text-anm">The Journey Behind Our Strategic Innovation</h3>
-                                        </div>
-                                        <div class="experience-text-wrap">
-                                            <div class="experience-box" data-aos="fade-up" data-aos-duration="1000">
-                                                <h2>30+ <span>Years of Technological Excellence</span></h2>
-                                            </div>
-                                            <div class="text-box">
-                                                <p data-aos="fade-up" data-aos-duration="1000">Our mission is to empower businesses of all sizes to thrive in an ever-changing digital marketplace. In a dynamic business environment, the key to success lies in having a partner who can navigate technological complexity and deliver future-proof solutions.</p>
-                                                <ul class="check-list style-one" data-aos="fade-up" data-aos-duration="1200">
-                                                    <li><i class="fas fa-check-circle"></i>100+ Successful Project Deployments</li>
-                                                    <li><i class="fas fa-check-circle"></i>Proven & Scalable Framework for Guaranteed Outcomes</li>
-                                                    <li><i class="fas fa-check-circle"></i>Specific, Time-Bound Results with a Performance Guarantee</li>
-                                                </ul>
-                                                <div class="bizzen-button" data-aos="fade-up" data-aos-duration="1400">
-                                                    <a href="about.html" class="theme-btn style-one">EXPLORE MORE  <i class="far fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--======  End About Section  ======-->
-                    <!--======  Start Achievement Section  ======-->
-                    <section class="bizzen-counter_one bg_cover pt-115 pb-80" style="background-image: url(assets/images/home-one/bg/counter-bg.jpg);">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <!--=== Bizzen Content Box ===-->
-                                    <div class="bizzen-content-box">
-                                        <div class="section-title text-white">
-                                            <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Achievement</span>
-                                            <h2 class="text-anm">Empowering Success for the World's Leading Brands</h2>
-                                        </div>
-                                        <p data-aos="fade-up" data-aos-duration="1200">Our mission is to empower businesses of all sizes to thrive in an ever-changing digital landscape. In today's dynamic business environment, we deliver the technological excellence and strategic insight that industry leaders rely on. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6">
-                                    <!--=== Bizzen Counter Item ===-->
-                                    <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="number">
-                                            <h2><span class="counter">2</span>M</h2>
-                                        </div>
-                                        <div class="content">
-                                            <h5>Solutions Deployed Globally</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <!--=== Bizzen Counter Item ===-->
-                                    <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
-                                        <div class="number">
-                                            <h2><span class="counter">52</span>+</h2>
-                                        </div>
-                                        <div class="content">
-                                            <h5>Industries Transformed</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <div class="col-lg-3 col-md-6">
-                                    <!--=== Bizzen Counter Item ===-->
-                                    <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
-                                        <div class="number">
-                                            <h2><span class="counter">99</span>%</h2>
-                                        </div>
-                                        <div class="content">
-                                            <h5>Client Success Rate</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <!--=== Bizzen Counter Item ===-->
-                                    <div class="bizzen-counter-item style-one mb-30" data-aos="fade-up" data-aos-duration="1400">
-                                        <div class="number">
-                                            <h2><span class="counter">5</span>K+</h2>
-                                        </div>
-                                        <div class="content">
-                                            <h5>Ranked Technology Partner</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--======  End Achievement Section  ======-->
-                    <!--======  Start Process Section  ======-->
-                    <section class="bizzen-proces_one py-5 py-xl-0 my-xl-0">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-xl-4 col-lg-12">
-                                    <!--=== Section Title ===-->
-                                    <div class="section-title mb-5 mb-xl-0">
-                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">HOW ITS WORKS</span>
-                                        <h2 class="text-anm">Our Blueprint for Digital Transformation</h2>
-                                        <p>A proven, three-step methodology to architect your success, from initial vision to measurable growth.</p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6">
-                                    <!--=== Section Title ===-->
-                                    <div class="bizzen-work-list">
-                                        <div class="bizzen-process-item style-one" data-aos="fade-up" data-aos-duration="1000">
-                                            <div class="number">
-                                                01
-                                            </div>
-                                            <div class="content">
-                                                <h5>Strategic Discovery & Vision</h5>
-                                            </div>
-                                        </div>
-                                        <div class="bizzen-process-item style-one" data-aos="fade-up" data-aos-duration="1200">
-                                            <div class="number">
-                                                02
-                                            </div>
-                                            <div class="content">
-                                                <h5>Solution Design & Validation</h5>
-                                            </div>
-                                        </div>
-                                        <div class="bizzen-process-item style-one" data-aos="fade-up" data-aos-duration="1400">
-                                            <div class="number">
-                                                03
-                                            </div>
-                                            <div class="content">
-                                                <h5>Expert Execution & Partnership</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6">
-                                    <!--=== Text Box ===-->
-                                    <div class="text-box mt-5 mt-md-0" data-aos="fade-up" data-aos-duration="1600">
-                                        <span>Client Satisfaction Rate</span>
-                                        <h2>98%</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--======  End Process Section  ======-->
-                    <!--====== Start Project Section ======-->
-                    <section class="bizzen-project-sec pt-120 pb-90">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-7 col-lg-10">
-                                    <!--=== Section Title ===-->
-                                    <div class="section-title text-center mb-60">
-                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Case Studies</span>
-                                        <h3 class="text-anm">Lead with Confidence And Full Control</h3>
-                                        <p>Explore how our strategic technology solutions have empowered industry leaders to overcome complex challenges and achieve transformative results.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=== Bizzen Project List ===-->
-                                    <div class="bizzen-project-list">
-                                        <!--=== Bizzen Project Item ===-->
-                                        <div class="bizzen-project-item style-one mb-30">
-                                            <div class="project-inner bg_cover" style="background-image: url(assets/images/home-one/project/slide1.webp);">
-                                                <div class="content">
-                                                    <span class="sub-title">AI & Machine Learning Implementation</span>
-                                                    <h4 class="title"><a href="project-details.html">AI-Powered Analytics: Driving Data-Led Decision Making</a></h4>
-                                                    <p>A global retail chain struggled to leverage its vast customer data for personalized marketing and inventory forecasting, leading to missed sales opportunities and stock inefficiencies.</p>
-                                                    <div class="tag-button">
-                                                        <a href="#" class="theme-btn style-two">Corporate</a>
-                                                        <a href="#" class="theme-btn style-two"> Artificial Intelligence</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--=== Bizzen Project Item ===-->
-                                        <div class="bizzen-project-item style-one mb-30">
-                                            <div class="project-inner bg_cover" style="background-image: url(assets/images/home-one/project/slide2.webp);">
-                                                <div class="content">
-                                                    <span class="sub-title"> DevOps & Automation</span>
-                                                    <h4 class="title"><a href="project-details.html">CI/CD Pipeline Implementation: Accelerating Time-to-Market</a></h4>
-                                                    <p>A mobile gaming company with a legacy development process suffered from slow, error-prone releases that hampered its ability to compete in a fast-paced market.</p>
-                                                    <div class="tag-button">
-                                                        <a href="#" class="theme-btn style-two">Corporate </a>
-                                                        <a href="#" class="theme-btn style-two">DevOps</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--=== Bizzen Project Item ===-->
-                                        <div class="bizzen-project-item style-one mb-30">
-                                            <div class="project-inner bg_cover" style="background-image: url(assets/images/home-one/project/slide3.webp);">
-                                                <div class="content">
-                                                    <span class="sub-title">Legacy System Modernization</span>
-                                                    <h4 class="title"><a href="project-details.html">Legacy System Modernization: Unlocking Innovation</a></h4>
-                                                    <p>An established manufacturing company was constrained by its 20-year-old monolithic ERP system, which was costly to maintain and incompatible with modern IoT and analytics tools.</p>
-                                                    <div class="tag-button">
-                                                        <a href="#" class="theme-btn style-two">Corporate</a>
-                                                        <a href="#" class="theme-btn style-two">Digital Transformation</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Project Section ======-->
-                    <!--====== Start Team Section ======-->
-                    <section class="bizzen-team_one pt-115 p-r z-1">
-                        <div class="team-bg bg_cover" style="background-color: #555b6a;"></div>
-                         <!-- style="background-image: url(assets/images/home-one/bg/team-bg.jpg);" -->
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-7 col-lg-10">
-                                    <!--=== Section Title ===-->
-                                    <div class="section-title text-center text-white mb-60">
-                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Our Teammate</span>
-                                        <h3 class="text-anm">Meet Our Expert Leadership Team</h3>
-                                        <p>The strategic minds behind our success. Our diverse leadership team brings decades of combined experience in technology, finance, and marketing to architect solutions that drive tangible business outcomes.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <!--=== Bizzen Team Item ===-->
-                                    <div class="bizzen-team-item style-one mb-40" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="member-image">
-                                            <img src="assets/images/home-one/team/team-1.jpg" alt="team image">
-                                            <div class="hover-content">
-                                                <div class="content-wrap">
-                                                    <div class="social-box">
-                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                    </div>
-                                                    <div class="member-info text-center">
-                                                        <h4 class="title"><a href="team-details.html">Esther Howard</a></h4>
-                                                        <span class="position">Chief Technology Officer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <!--=== Bizzen Team Item ===-->
-                                    <div class="bizzen-team-item style-one mb-40" data-aos="fade-up" data-aos-duration="1200">
-                                        <div class="member-image">
-                                            <img src="assets/images/home-one/team/team-2.jpg" alt="team image">
-                                            <div class="hover-content">
-                                                <div class="content-wrap">
-                                                    <div class="social-box">
-                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                    </div>
-                                                    <div class="member-info text-center">
-                                                        <h4 class="title"><a href="team-details.html">Jenny Wilson</a></h4>
-                                                        <span class="position">Head of Digital Strategy</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <!--=== Bizzen Team Item ===-->
-                                    <div class="bizzen-team-item style-one mb-40" data-aos="fade-up" data-aos-duration="1400">
-                                        <div class="member-image">
-                                            <img src="assets/images/home-one/team/team-3.jpg" alt="team image">
-                                            <div class="hover-content">
-                                                <div class="content-wrap">
-                                                    <div class="social-box">
-                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                    </div>
-                                                    <div class="member-info text-center">
-                                                        <h4 class="title"><a href="team-details.html">Wade Warren</a></h4>
-                                                        <span class="position">Chief Financial Officer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6 col-sm-12">
-                                    <!--=== Bizzen Team Item ===-->
-                                    <div class="bizzen-team-item style-one mb-40" data-aos="fade-up" data-aos-duration="1600">
-                                        <div class="member-image">
-                                            <img src="assets/images/home-one/team/team-4.jpg" alt="team image">
-                                            <div class="hover-content">
-                                                <div class="content-wrap">
-                                                    <div class="social-box">
-                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                    </div>
-                                                    <div class="member-info text-center">
-                                                        <h4 class="title"><a href="team-details.html">Devon Lane</a></h4>
-                                                        <span class="position">Head of Marketing & Growth</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Team Section ======-->
-                    <!--====== Start Testimonial Section ======-->
-                    <section class="bizzen-testimonial_one pt-80 pb-110">
-                        <div class="testimonial-map-bg bg_cover" style="background-image: url(assets/images/home-one/testimonial/map-bg.png);"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=== Quote Box ===-->
-                                    <div class="quote-box text-center mb-40">
-                                        <img src="assets/images/home-one/testimonial/quote.png" alt="quote">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <!--=== Testimonial Slider ===-->
-                                    <div class="testimonial-slider">
-                                        <!--=== Bizzen Testimonial Item ===-->
-                                        <div class="bizzen-testimonial-item style-one">
-                                            <div class="testimonial-content">
-                                                <p>“The strategic cloud migration they executed for us cut our operational costs by 40% and eliminated system downtime. Their team didn't just implement technology; they delivered a seamless transition that our entire business felt.” </p>
-                                                <div class="ratings">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="author-thumb-item">
-                                                    <div class="author-thumb">
-                                                        <img src="assets/images/home-one/testimonial/testi-author-1.jpg" alt="author image">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h5>Sarah Jenkins</h5>
-                                                        <span class="position">CTO, InnovateSphere</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--=== Bizzen Testimonial Item ===-->
-                                        <div class="bizzen-testimonial-item style-one">
-                                            <div class="testimonial-content">
-                                                <p>“We were struggling with data silos and outdated analytics. Their team built us a unified data platform that provided real-time insights we never had before, fundamentally changing how we make strategic decisions.” </p>
-                                                <div class="ratings">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="author-thumb-item">
-                                                    <div class="author-thumb">
-                                                        <img src="assets/images/home-one/testimonial/testi-author-2.jpg" alt="author image">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h5>Michael Chen</h5>
-                                                        <span class="position">VP of Operations, DataCore Solutions</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Testimonial Section ======-->
-                    <!--====== Start Contact Section ======-->
-                    <section class="bizzen-contact_one">
-                        <!-- Contact Wrapper -->
-                        <div class="contact-wrapper">
-                            <!--=== Bizzen Bg ===-->
-                            <div class="contact-bg-wrap">
-                                <div class="contact-bg bg_cover" style="background-image: url(assets/images/home-one/contact/img2.png);"></div>
-                            </div>
-                            <!--=== Bizzen Contact Wrapper ===-->
-                            <div class="contact-form-wrapper mb-120">
-                                <!--=== Bizzen Content Box ===-->
-                                <div class="bizzen-content-box">
-                                    <div class="section-title text-white">
-                                        <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Contact Us</span>
-                                        <h3 class="text-anm">Get Your Free Technology Consultation Today</h3>
-                               
-                                    </div>
-                                    <p class="mb-50" data-aos="fade-up" data-aos-duration="1200">Need help with a digital project or have a question about our services? Get in touch with our team.</p>
-                                    <form autocomplete="off" class="contact-form" data-aos="fade-up" data-aos-duration="1400">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label>Name *</label>
-                                                    <input type="text" class="form_control" name="name" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label>Phone No *</label>
-                                                    <input type="text" class="form_control" name="phone" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label>Email Address *</label>
-                                                    <input type="text" class="form_control" name="email" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label>Subject *</label>
-                                                    <input type="text" class="form_control" name="subject" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label>Message *</label>
-                                                    <textarea name="message" class="form_control" rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group mt-10">
-                                                    <button class="theme-btn style-one">SEND MESSAGE  <i class="far fa-arrow-right"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Contact Section ======-->
-                    <!--====== Start Blog Section ======-->
-                    <section class="bizzen-blog-sec pt-110 pb-90">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-5 col-lg-10">
-                                    <!--=== Bizzen Content Box ===-->
-                                    <div class="bizzen-content-box mb-5 mb-xl-0 text-center text-xl-start">
-                                        <div class="section-title">
-                                            <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">READ OUR BLOG</span>
-                                            <h2 class="text-anm">Explore Our Latest Insights & News</h2>
-                                            <p>Stay ahead of the curve with expert articles on technology, strategy, and business innovation.</p>
-                                        </div>
-                                        <div class="bizzen-button" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="blog-grid.html" class="theme-btn style-one">SEE ALL PROJECT  <i class="far fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 col-lg-10">
-                                    <!--=== Bizzen Blog List ===-->
-                                    <div class="bizzen-blog-list">
-                                        <!--=== Bizzen Blog Item ===-->
-                                        <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                            <div class="post-thumbnail">
-                                                <img src="assets/images/home-one/blog/blog-five1.webp" alt="Post Thumbnail">
-                                            </div>
-                                            <div class="post-content">
-                                                <div class="post-meta">
-                                                    <span><a href="#">Technology </a></span>
-                                                    <span>June 7, 2025</span>
-                                                </div>
-                                                <h5 class="title"><a href="blog-details.html">Why a Robust Cloud Strategy is Non-Negotiable for Modern Enterprises</a></h5>
-                                                <p>In today's digital-first landscape, a secure and scalable cloud foundation is the backbone of agility and innovation. We break down the critical components every business leader must prioritize.</p>
-                                                <a href="blog-details.html" class="read-more style-one">READ MORE  <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--=== Bizzen Blog Item ===-->
-                                        <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
-                                            <div class="post-thumbnail">
-                                                <img src="assets/images/home-one/blog/blog-five2.webp" alt="Post Thumbnail">
-                                            </div>
-                                            <div class="post-content">
-                                                <div class="post-meta">
-                                                    <span><a href="#">Strategy </a></span>
-                                                    <span>June 1, 2025</span>
-                                                </div>
-                                                <h5 class="title"><a href="blog-details.html">Architecting Success: Building a Future-Proof Digital Transformation Roadmap</a></h5>
-                                                <p>Moving from legacy systems to a dynamic, data-driven organization requires a clear blueprint. Discover the key phases for a successful and sustainable transformation journey.</p>
-                                                <a href="blog-details.html" class="read-more style-one">READ MORE  <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--=== Bizzen Blog Item ===-->
-                                        <div class="bizzen-blog-post-item style-one mb-30" data-aos="fade-up" data-aos-duration="1400">
-                                            <div class="post-thumbnail">
-                                                <img src="assets/images/home-one/blog/blog-five3.webp" alt="Post Thumbnail">
-                                            </div>
-                                            <div class="post-content">
-                                                <div class="post-meta">
-                                                    <span><a href="#">Industry Insights </a></span>
-                                                    <span>June 17, 2025</span>
-                                                </div>
-                                                <h5 class="title"><a href="blog-details.html">Key Considerations for Tech Consultants in the Fintech Sector</a></h5>
-                                                <p>Navigating the unique blend of innovation, security, and compliance in financial technology. Learn the critical factors for delivering successful projects in this highly regulated space.</p>
-                                                <a href="blog-details.html" class="read-more style-one">READ MORE  <i class="far fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Blog Section ======-->
-                    <!--====== Start Company Section ======-->
-                    <section class="bizzen-company-sec pb-120">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="text-box text-center mb-30" data-aos="fade-up" data-aos-duration="1000">
-                                        <h6>Trusted by Industry Leaders Worldwide</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <!--=== Clients Slider ===-->
-                            <div class="clients-slider" data-aos="fade-up" data-aos-duration="1200">
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-1.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-2.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-3.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-4.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-5.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-1.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                                <!--=== Bizzen Client Item ===-->
-                                <div class="bizzen-client-item">
-                                    <div class="client-img">
-                                        <img src="assets/images/home-one/company/client-2.png" alt="Client Logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section><!--====== End Company Section ======-->
-                </main>
-                <!--======  Start Footer  ======-->
-                <footer class="main-footer">
-                    <div class="footer-shape"><img src="assets/images/footer/footer-shape.png" alt="footer shape"></div>
-                    <!--=== Footer Widget Wrapper ===-->
-                    <div class="footer-widget-wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <!--=== Footer Widget ===-->
-                                    <div class="footer-widget footer-about-widget pt-100" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="widget-content">
-                                            <div class="footer-logo mb-20">
-                                                <a href="index.html"><img src="assets/images/home-one/logo/logo-main.png" alt="logo white"></a>
-                                            </div>
-                                            <p class="mb-20">Sign up to searing weekly newsletter to get the latest updates</p>
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type="email" class="form_control" placeholder="Enter Email Address" name="email" required>
-                                                    <button class="submit-btn"><i class="far fa-paper-plane"></i></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <!--=== Footer Widget Wrap ===-->
-                                    <div class="footer-widget-inner">
-                                        <!--=== Footer Top ===-->
-                                        <div class="footer-top" data-aos="fade-up" data-aos-duration="1000">
-                                            <div class="big-text">Let’s talk Business?</div>
-                                        </div>
-                                        <div class="footer-widget-area">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <!--=== Footer Widget ===-->
-                                                    <div class="footer-widget footer-contact-info-widget mb-40" data-aos="fade-up" data-aos-duration="1200">
-                                                        <div class="widget-content">
-                                                            <h6>Headquarters - USA</h6>
-                                                            <ul>
-                                                                <li>
-                                                                  Crest View Technologies, mg Manchester, USA
-                                                                </li>
-                                                                <li>
-                                                                    <a href="tel:+91 9898989897">+91 9898989897</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!--=== Footer Widget ===-->
-                                                    <div class="footer-widget footer-contact-info-widget mb-40" data-aos="fade-up" data-aos-duration="1400">
-                                                        <div class="widget-content">
-                                                            <h6>Headquarters - UK</h6>
-                                                            <ul>
-                                                                <li>
-                                                                    Crest View Technologies, West Rond, MT 94251-030
-                                                                </li>
-                                                                <li>
-                                                                    <a href="mailto:company@gmail.com">info@crestview.com</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!--=== Footer Widget ===-->
-                                                    <div class="footer-widget footer-social-widget mb-40" data-aos="fade-up" data-aos-duration="1600">
-                                                        <h4 class="widget-title">Follow Us:</h4>
-                                                        <div class="widget-content">
-                                                            <div class="social-box">
-                                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-md-6">
+                                <!--=== Copyright link ===-->
+                                <div class="copyright-link text-md-end text-center">
+                                    <a href="index.html">Terms & Conditions</a>
+                                    <a href="index.html">Privacy Policy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--=== Copyright Area ===-->
-                    <div class="copyright-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!--=== Copyright Text ===-->
-                                    <div class="copyright-text text-md-start text-center">
-                                        <p>&copy; All copyright 2025 by Crest View Technologies</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <!--=== Copyright link ===-->
-                                    <div class="copyright-link text-md-end text-center">
-                                        <a href="index.html">Terms & Conditions</a>
-                                        <a href="index.html">Privacy Policy</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-        <!--====== Jquery js ======-->
-        <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
-        <!--====== Bootstrap js ======-->
-        <script src="assets/js/plugins/popper.min.js"></script>
-        <!--====== Bootstrap js ======-->
-        <script src="assets/js/plugins/bootstrap.min.js"></script>
-        <!--====== Gsap Js ======-->
-        <script src="assets/js/plugins/gsap/gsap.min.js"></script>
-        <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
-        <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
-        <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
-        <!--====== Slick js ======-->
-        <script src="assets/js/plugins/slick.min.js"></script>
-        <!--====== Magnific js ======-->
-        <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-        <!--====== Waypoint js ======-->
-        <script src="assets/js/plugins/jquery.waypoints.js"></script>
-        <!--====== CounterUp js ======-->
-        <script src="assets/js/plugins/jquery.counterup.min.js"></script>
-        <!--====== Aos js ======-->
-        <script src="assets/js/plugins/aos.js"></script>
-        <!--====== Common js ======-->
-        <script src="assets/js/theme.js"></script>
-    </body>
+    </div>
+    <!--====== Jquery js ======-->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <!--====== Gsap Js ======-->
+    <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+    <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <!--====== Waypoint js ======-->
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <!--====== CounterUp js ======-->
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <!--====== Aos js ======-->
+    <script src="assets/js/plugins/aos.js"></script>
+    <!--====== Common js ======-->
+    <script src="assets/js/theme.js"></script>
+
+<script>
+       
+        // 07. Main Slider
+        if ($('.main-slider-wrap').length) {
+            $('.main-slider-wrap').slick({
+                infinite: true,
+                autoplay: true,
+                arrows: true,
+                pauseOnHover: false,
+                autoplaySpeed: 5000,
+                prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
+                nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                cssEase: 'linear',
+            });
+        }
+
+</script>
+</body>
+
 </html>
