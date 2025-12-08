@@ -1250,7 +1250,7 @@ label {
   border: 1px solid var(--border-color);
   padding: 15px 30px;
   line-height: 20px;
-  color: var(--heading-color);
+  color: #ffffff;
 }
 .theme-btn.style-two:hover {
   background-color: #ce16b8;
