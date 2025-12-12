@@ -213,33 +213,38 @@
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <input type="text" class="form_control" placeholder="Your Name"
-                                                        name="name" required>
+                                                        name="name">
+                                                    <div class="error-message" style="color:red; display:none; margin-top: -24px;"></div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <input type="email" class="form_control" placeholder="Email Address"
-                                                        name="email" required>
+                                                        name="email">
+                                                    <div class="error-message" style="color:red; display:none; margin-top: -24px;"></div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <input type="text" class="form_control" placeholder="Phone Number"
-                                                        name="phone" required>
+                                                        name="phone">
+                                                    <div class="error-message" style="color:red; display:none;  margin-top: -24px;"></div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <textarea class="form_control" placeholder="Message" name="message"
-                                                        rows="5" cols="8"></textarea>
+                                                        rows="5"></textarea>
+                                                    <div class="error-message" style="color:red; display:none;  margin-top: -24px;"></div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <button class="theme-btn style-one">Send Message Us <i
+                                                    <button type="submit" class="theme-btn style-one">Send Message Us <i
                                                             class="far fa-arrow-right"></i></button>
-                                                     <div id="form-message" style="display:none; color:green; margin-top:10px;">Your Message Successfully Submitted</div>
-
+                                                    <div id="form-message"
+                                                        style="display:none; color:green;">Your Message
+                                                        Successfully Submitted</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -352,44 +357,74 @@
             </footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $("#contact-form").on("submit", function (e) {
-            e.preventDefault(); // Prevent page refresh / redirect
+            e.preventDefault(); // prevent page refresh
 
-            let form = $(this);
+            // Clear previous messages
+            $(".error-message").hide().text('');
+            $("#form-message").hide();
 
+            let name = $("input[name='name']").val().trim();
+            let email = $("input[name='email']").val().trim();
+            let phone = $("input[name='phone']").val().trim();
+            let message = $("textarea[name='message']").val().trim();
+
+            let hasError = false;
+
+            // Name validation
+            if (name === "") {
+                $("input[name='name']").next(".error-message").text("Please enter your name.").show();
+                hasError = true;
+            }
+
+            // Email validation
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "" || !emailPattern.test(email)) {
+                $("input[name='email']").next(".error-message").text("Please enter a valid email address.").show();
+                hasError = true;
+            }
+
+            // Phone validation (digits only, 10-15 characters)
+            let phonePattern = /^[0-9]{10,15}$/;
+            if (phone === "" || !phonePattern.test(phone)) {
+                $("input[name='phone']").next(".error-message").text("Please enter a valid phone number.").show();
+                hasError = true;
+            }
+
+            // Message validation
+            if (message === "") {
+                $("textarea[name='message']").next(".error-message").text("Please enter your message.").show();
+                hasError = true;
+            }
+
+            if (hasError) return;
+
+            // AJAX submit
             $.ajax({
-                url: "contact.php",
+                url: $(this).attr("action"),
                 type: "POST",
-                data: form.serialize(),
+                data: $(this).serialize(),
                 dataType: "json",
-
                 beforeSend: function () {
-                    $(".theme-btn")
-                        .prop("disabled", true)
-                        .text("Sending...");
+                    $(".theme-btn").prop("disabled", true).text("Sending...");
                 },
-
-                success: function (res) {
-                    $(".theme-btn").prop("disabled", false).text("Send Message");
-
-                    if (res.status === "success") {
-                        // Display message somewhere in the page instead of alert
-                        $("#form-message").text(res.message).show();
-                        // Optionally reset the form
-                        // form.trigger("reset");
-                    } else {
-                        $("#form-message").text(res.message).show();
+                success: function (response) {
+                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
+                    if (response.success) {
+                        $("#form-message").text(response.message).show();
+                        $("#contact-form")[0].reset();
+                    } else if (response.errors) {
+                        // Show server-side validation errors
+                        $.each(response.errors, function (field, msg) {
+                            $("input[name='" + field + "'], textarea[name='" + field + "']").next(".error-message").text(msg).show();
+                        });
                     }
                 },
-
                 error: function () {
-                    $(".theme-btn")
-                        .prop("disabled", false)
-                        .text("Send Message");
-
-                    alert("Something went wrong. Please try again.");
+                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
+                    $("#form-message").text("Something went wrong. Please try again later.").css("color", "red").show();
                 }
             });
         });
