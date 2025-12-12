@@ -41,8 +41,11 @@ try {
     // Reply-to is the user
     $mail->addReplyTo($email, $name);
 
-    // Recipient
-    $mail->addAddress('hardikprajapati8104@gmail.com');
+    // Main recipient
+    $mail->addAddress('tech.crestview@gmail.com');
+
+    // CC recipient
+    $mail->addCC('gk@devotiontech.io');
 
     // Email content
     $mail->isHTML(true);
@@ -65,3 +68,4 @@ try {
 } catch (Exception $e) {
     echo json_encode(['status' => 'error', 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
 }
+?>
