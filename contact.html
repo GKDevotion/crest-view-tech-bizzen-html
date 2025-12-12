@@ -238,6 +238,8 @@
                                                 <div class="form-group">
                                                     <button class="theme-btn style-one">Send Message Us <i
                                                             class="far fa-arrow-right"></i></button>
+                                                     <div id="form-message" style="display:none; color:green; margin-top:10px;">Your Message Successfully Submitted</div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -369,16 +371,15 @@
                 },
 
                 success: function (res) {
-                    $(".theme-btn")
-                        .prop("disabled", false)
-                        .text("Send Message");
+                    $(".theme-btn").prop("disabled", false).text("Send Message");
 
-                    // If success → reset form
                     if (res.status === "success") {
-                        alert(res.message);
-                        form.trigger("reset");   // <--- BEST way to reset the form
+                        // Display message somewhere in the page instead of alert
+                        $("#form-message").text(res.message).show();
+                        // Optionally reset the form
+                        // form.trigger("reset");
                     } else {
-                        alert(res.message);
+                        $("#form-message").text(res.message).show();
                     }
                 },
 
