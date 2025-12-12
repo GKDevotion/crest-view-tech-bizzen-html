@@ -351,36 +351,46 @@
         </div>
     </div>
     <script>
-
         $("#contact-form").on("submit", function (e) {
-            e.preventDefault(); // Stop form redirect
+            e.preventDefault(); // Prevent page refresh / redirect
+
+            let form = $(this);
 
             $.ajax({
                 url: "contact.php",
-                method: "POST",
-                data: $(this).serialize(),
+                type: "POST",
+                data: form.serialize(),
                 dataType: "json",
-                beforeSend: function () {
-                    $(".theme-btn").prop("disabled", true).text("Sending...");
-                },
-                success: function (response) {
-                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
 
-                    if (response.status === "success") {
-                        alert(response.message);
-                        $("#contact-form")[0].reset();
+                beforeSend: function () {
+                    $(".theme-btn")
+                        .prop("disabled", true)
+                        .text("Sending...");
+                },
+
+                success: function (res) {
+                    $(".theme-btn")
+                        .prop("disabled", false)
+                        .text("Send Message");
+
+                    // If success → reset form
+                    if (res.status === "success") {
+                        alert(res.message);
+                        form.trigger("reset");   // <--- BEST way to reset the form
                     } else {
-                        alert(response.message);
+                        alert(res.message);
                     }
                 },
+
                 error: function () {
-                    alert("Something went wrong. Try again later.");
-                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
+                    $(".theme-btn")
+                        .prop("disabled", false)
+                        .text("Send Message");
+
+                    alert("Something went wrong. Please try again.");
                 }
             });
         });
-
-
     </script>
     <!--====== Jquery js ======-->
     <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
