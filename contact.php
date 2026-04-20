@@ -1,71 +1,459 @@
-<?php
+<!DOCTYPE html>
+<html lang="zxx">
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Business, Consulting, Finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Crest View Technologies - Business Consulting HTML Template</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets\images\home-one\logo\logo-main.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <!--====== Magnific-popup css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <!--====== Aos css ======-->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/spacings.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-// Load PHPMailer classes
-require __DIR__ . '/PHPMailer/src/Exception.php';
-require __DIR__ . '/PHPMailer/src/PHPMailer.php';
-require __DIR__ . '/PHPMailer/src/SMTP.php';
+<body>
+    <!--====== Start Preloader ======-->
+    <div class="preloader">
+        <div class="loading-wrapper">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="assets/images/loader.png" alt="loader"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
+    <!--====== Start Overlay ======-->
+    <div class="offcanvas__overlay"></div>
+    <!--=== Start  Header Area  ===-->
+    <header class="header-area header-one">
+        <!--====  Header Navigation  ===-->
+        <div class="header-navigation">
+            <div class="container-fluid">
+                <!--====  Primary Menu  ===-->
+                <div class="primary-menu">
+                    <!--====  Site Branding  ===-->
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="assets/images/home-one/logo/logo-main.png"
+                                alt="Brand Logo"></a>
+                    </div>
+                    <!--=== Main Menu ===-->
+                    <div class="theme-nav-menu">
+                        <!--=== Menu Top ===-->
+                        <div class="theme-menu-top d-block d-lg-none">
+                            <div class="site-branding">
+                                <a href="index.html" class="brand-logo"><img
+                                        src="assets/images/home-one/logo/logo-main.png" alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <!--=== Main Menu ===-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children"><a href="index.html">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item has-children"><a href="services.html">Services</a>
 
-header('Content-Type: application/json');
+                                </li>
+                                <li class="menu-item has-children"><a href="project.html">Projects</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="project.html">Projects</a></li>
+                                            <li><a href="project-details.html">Project Details</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a href="blog-grid.html">Blog</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="blog-grid.html">Blog Grid</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                </li>
 
-// Only POST requests
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
-    exit;
-}
+                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!--=== Nav Button ===-->
+                        <div class="theme-nav-button mt-20 d-block d-md-none">
+                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                                    class="far fa-arrow-right"></i></a>
+                        </div>
+                        <!--===  Menu Bottom ===-->
+                        <div class="theme-menu-bottom mt-50 d-block d-xl-none">
+                            <h5>Follow Us</h5>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== Header Nav Right ===-->
+                    <div class="nav-right-item">
+                        <div class="nav-button d-none d-md-block">
+                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                                    class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--=== End  Header Area  ===-->
+    <!--======  Smooth Wrapper  ======-->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!--======  Start Page Hero Section  ======-->
+                <section class="page-hero bg_cover p-r z-1"
+                    style="background-image: url(assets/images/innerpage/bg/banner.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="page-content text-center">
+                                    <h1>Contact us for inquiries</h1>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li>Contact Us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Page Hero Section  ======-->
+                <!--======  Start Contact Info Section  ======-->
+                <section class="bizzen-contact-info-sec pt-105">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--=== Section Title ===-->
+                                <div class="section-title text-center mb-50">
+                                    <h3>Our Contact Information</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <!--=== Bizzen Info Box ===-->
+                                <div class="bizzen-info-left-box mb-40">
+                                    <div class="icon">
+                                        <i class="far fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Our Address</h5>
+                                        <p>
+                                            Binghatti emerald, Office No 315 JVC, Dubai UAE
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <!--=== Bizzen Info Box ===-->
+                                <div class="bizzen-info-left-box mb-40">
+                                    <div class="icon">
+                                        <i class="far fa-phone-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Contact Number</h5>
+                                        <p><span>Mobile: <a href="tel:+971 551282215">+971 551282215</a></span></p>
+                                        <p><span>Email: <a href="mailto:contact@crestviewtech.io">contact@crestviewtech.io</a></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <!--=== Bizzen Info Box ===-->
+                                <div class="bizzen-info-left-box mb-40">
+                                    <div class="icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Our Address</h5>
+                                        <p>Mon - Sat: 9:00 - 18:00</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Contact Info Section  ======-->
+                <!--======  Start Contact Section  ======-->
+                <section class="bizzen-contact_two pt-80 pb-120">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-10">
+                                <!--=== Map Box ===-->
+                                <div class="map-box mb-5 mb-xl-0" data-aos="fade-up" data-aos-duration="1300">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d96777.16150026117!2d-74.00840582560909!3d40.71171357405996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd"
+                                        loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-10">
+                                <!--=== Contact Wrapper ===-->
+                                <div class="contact-wrapper" data-aos="fade-left" data-aos-duration="1400">
+                                    <h2>Get In Touch</h2>
+                                    <form id="contact-form" class="contact-form" action="contact.php" method="POST">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form_control" placeholder="Your Name"
+                                                        name="name">
+                                                    <div class="error-message" style="color:red; display:none; margin-top: -24px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="email" class="form_control" placeholder="Email Address"
+                                                        name="email">
+                                                    <div class="error-message" style="color:red; display:none; margin-top: -24px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form_control" placeholder="Phone Number"
+                                                        name="phone">
+                                                    <div class="error-message" style="color:red; display:none;  margin-top: -24px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <textarea class="form_control" placeholder="Message" name="message"
+                                                        rows="5"></textarea>
+                                                    <div class="error-message" style="color:red; display:none;  margin-top: -24px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <button type="submit" class="theme-btn style-one">Send Message Us <i
+                                                            class="far fa-arrow-right"></i></button>
+                                                    <div id="form-message"
+                                                        style="display:none; color:green;">Your Message
+                                                        Successfully Submitted</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--======  End Contact Section  ======-->
+            </main>
+            <!--======  Start Footer  ======-->
+            <footer class="main-footer">
+                <div class="footer-shape"><img src="assets/images/footer/footer-shape.png" alt="footer shape"></div>
+                <!--=== Footer Widget Wrapper ===-->
+                <div class="footer-widget-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!--=== Footer Widget ===-->
+                                <div class="footer-widget footer-about-widget pt-100" data-aos="fade-up"
+                                    data-aos-duration="800">
+                                    <div class="widget-content">
+                                        <div class="footer-logo mb-20">
+                                            <a href="index.html"><img src="assets/images/home-one/logo/logo-main.png"
+                                                    alt="logo white"></a>
+                                        </div>
+                                        <p class="mb-20">Stay updated with our weekly Newsletter.
+                                        </p>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form_control"
+                                                    placeholder="Enter Email Address" name="email" required>
+                                                <button class="submit-btn"><i class="far fa-paper-plane"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!--=== Footer Widget Wrap ===-->
+                                <div class="footer-widget-inner">
+                                    <!--=== Footer Top ===-->
+                                    <div class="footer-top" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="big-text">Let’s talk Business?</div>
+                                    </div>
+                                    <div class="footer-widget-area">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <!--=== Footer Widget ===-->
+                                                <div class="footer-widget footer-contact-info-widget mb-40"
+                                                    data-aos="fade-up" data-aos-duration="1200">
+                                                    <div class="widget-content">
+                                                        <h6>Office address </h6>
+                                                        <ul>
+                                                            <li>
+                                                                Binghatti emerald <br>
+                                                                Office No 315 JVC <br>
+                                                                Dubai UAE
+                                                            </li>
+                                                            <li>
+                                                                <a href="tel:+971 551282215">+971 551282215</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-// Get form data
-$name    = trim($_POST['name'] ?? '');
-$email   = trim($_POST['email'] ?? '');
-$phone   = trim($_POST['phone'] ?? '');
-$message = trim($_POST['message'] ?? '');
+                                            <div class="col-md-4">
+                                                <!--=== Footer Widget ===-->
+                                                <div class="footer-widget footer-social-widget mb-40" data-aos="fade-up"
+                                                    data-aos-duration="1600">
+                                                    <h4 class="widget-title">Follow Us:</h4>
+                                                    <div class="widget-content">
+                                                        <div class="social-box">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=== Copyright Area ===-->
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--=== Copyright Text ===-->
+                                <div class="copyright-text text-md-start text-center">
+                                    <p>&copy; All copyright 2025 by Crest View Technologies</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--=== Copyright link ===-->
+                                <div class="copyright-link text-md-end text-center">
+                                    <a href="index.html">Terms & Conditions</a>
+                                    <a href="index.html">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#contact-form").on("submit", function (e) {
+            e.preventDefault(); // prevent page refresh
 
-// Validate required fields
-if ($name === '' || $email === '' || $phone === '') {
-    echo json_encode(['status' => 'error', 'message' => 'Please fill all fields']);
-    exit;
-}
+            // Clear previous messages
+            $(".error-message").hide().text('');
+            $("#form-message").hide();
 
-// Create PHPMailer instance
-$mail = new PHPMailer(true);
+            let name = $("input[name='name']").val().trim();
+            let email = $("input[name='email']").val().trim();
+            let phone = $("input[name='phone']").val().trim();
+            let message = $("textarea[name='message']").val().trim();
 
-try {
-    // Use PHP's mail() function
-    $mail->isMail();
+            let hasError = false;
 
-    // Sender (must be from your domain)
-    $mail->setFrom('no-reply@gmail.com', 'Website Contact');
+            // Name validation
+            if (name === "") {
+                $("input[name='name']").next(".error-message").text("Please enter your name.").show();
+                hasError = true;
+            }
 
-    // Reply-to is the user
-    $mail->addReplyTo($email, $name);
+            // Email validation
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "" || !emailPattern.test(email)) {
+                $("input[name='email']").next(".error-message").text("Please enter a valid email address.").show();
+                hasError = true;
+            }
 
-    // Main recipient
-    $mail->addAddress('tech.crestview@gmail.com');
+            // Phone validation (digits only, 10-15 characters)
+            let phonePattern = /^[0-9]{10,15}$/;
+            if (phone === "" || !phonePattern.test(phone)) {
+                $("input[name='phone']").next(".error-message").text("Please enter a valid phone number.").show();
+                hasError = true;
+            }
 
-    // CC recipient
-    $mail->addCC('gk@devotiontech.io');
+            // Message validation
+            if (message === "") {
+                $("textarea[name='message']").next(".error-message").text("Please enter your message.").show();
+                hasError = true;
+            }
 
-    // Email content
-    $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Submission';
-    $mail->Body = "
-        <h3>New Contact Message</h3>
-        <p><strong>Name:</strong> {$name}</p>
-        <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Message:</strong><br>{$message}</p>
-    ";
+            if (hasError) return;
 
-    // Send the email
-    if ($mail->send()) {
-        echo json_encode(['status' => 'success', 'message' => 'Message sent successfully']);
-    } else {
-        echo json_encode(['status' => 'error', 'message' => 'Unable to send email']);
-    }
+            // AJAX submit
+            $.ajax({
+                url: $(this).attr("action"),
+                type: "POST",
+                data: $(this).serialize(),
+                dataType: "json",
+                beforeSend: function () {
+                    $(".theme-btn").prop("disabled", true).text("Sending...");
+                },
+                success: function (response) {
+                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
+                    if (response.success) {
+                        $("#form-message").text(response.message).show();
+                        $("#contact-form")[0].reset();
+                    } else if (response.errors) {
+                        // Show server-side validation errors
+                        $.each(response.errors, function (field, msg) {
+                            $("input[name='" + field + "'], textarea[name='" + field + "']").next(".error-message").text(msg).show();
+                        });
+                    }
+                },
+                error: function () {
+                    $(".theme-btn").prop("disabled", false).text("Send Message Us");
+                    $("#form-message").text("Something went wrong. Please try again later.").css("color", "red").show();
+                }
+            });
+        });
+    </script>
+    <!--====== Jquery js ======-->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <!--====== Gsap Js ======-->
+    <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+    <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <!--====== Waypoint js ======-->
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <!--====== CounterUp js ======-->
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <!--====== Aos js ======-->
+    <script src="assets/js/plugins/aos.js"></script>
+    <!--====== Common js ======-->
+    <script src="assets/js/theme.js"></script>
+</body>
 
-} catch (Exception $e) {
-    echo json_encode(['status' => 'error', 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
-}
-?>
+</html>
